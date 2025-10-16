@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "prod_001",
+      "description": "Chrono-Weave Trench Coat",
+      "imageUrl": "https://picsum.photos/seed/prod001/800/600",
+      "imageHint": "futuristic coat"
+    },
+    {
+      "id": "prod_002",
+      "description": "Kinetic Mesh Sneakers",
+      "imageUrl": "https://picsum.photos/seed/prod002/800/600",
+      "imageHint": "glowing sneakers"
+    },
+    {
+      "id": "prod_003",
+      "description": "Aether-Light Visor",
+      "imageUrl": "https://picsum.photos/seed/prod003/800/600",
+      "imageHint": "cyberpunk visor"
+    },
+    {
+      "id": "prod_004",
+      "description": "Gravity-Shift Trousers",
+      "imageUrl": "https://picsum.photos/seed/prod004/800/600",
+      "imageHint": "techwear pants"
+    },
+    {
+      "id": "prod_005",
+      "description": "Phase-Shift Satchel",
+      "imageUrl": "https://picsum.photos/seed/prod005/800/600",
+      "imageHint": "iridescent bag"
+    },
+    {
+      "id": "prod_006",
+      "description": "Oracle Data-Gloves",
+      "imageUrl": "https://picsum.photos/seed/prod006/800/600",
+      "imageHint": "glowing gloves"
+    }
+  ]
 }
