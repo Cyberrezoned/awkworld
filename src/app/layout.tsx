@@ -5,6 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import FloatingNav from '@/components/layout/floating-nav';
+import { AppRouterAnimatePresence } from '@/components/AppRouterAnimatePresence';
 
 export const metadata: Metadata = {
   title: 'Awkward: Elegance in Motion',
@@ -26,7 +27,9 @@ export default function RootLayout({
       </head>
       <body className={cn('font-body antialiased min-h-screen flex flex-col')}>
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">
+          <AppRouterAnimatePresence>{children}</AppRouterAnimatePresence>
+        </main>
         <Footer />
         <FloatingNav />
         <Toaster />
