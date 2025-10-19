@@ -3,38 +3,66 @@
     {
       "id": "prod_001",
       "description": "Chrono-Weave Trench Coat",
-      "imageUrl": "https://picsum.photos/seed/prod001/800/600",
+      "category": "Coats & Jackets",
+      "price": 349.99,
+      "imageUrl": "https://images.unsplash.com/photo-1666348990135-b2bc0bb51d75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmdXR1cmlzdGljJTIwY29hdHxlbnwwfHx8fDE3NjA4MzU0NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "futuristic coat"
     },
     {
       "id": "prod_002",
       "description": "Kinetic Mesh Sneakers",
-      "imageUrl": "https://picsum.photos/seed/prod002/800/600",
+      "category": "Footwear",
+      "price": 189.5,
+      "imageUrl": "https://images.unsplash.com/photo-1612723689578-78860167db9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxnbG93aW5nJTIwc25lYWtlcnN8ZW58MHx8fHwxNzYwODM1NDYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "glowing sneakers"
     },
     {
       "id": "prod_003",
       "description": "Aether-Light Visor",
-      "imageUrl": "https://picsum.photos/seed/prod003/800/600",
+      "category": "Accessories",
+      "price": 99,
+      "imageUrl": "https://images.unsplash.com/photo-1589128560347-f116af148d62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjeWJlcnB1bmslMjB2aXNvcnxlbnwwfHx8fDE3NjA4Mjk2ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cyberpunk visor"
     },
     {
       "id": "prod_004",
       "description": "Gravity-Shift Trousers",
-      "imageUrl": "https://picsum.photos/seed/prod004/800/600",
+      "category": "Trousers",
+      "price": 149.99,
+      "imageUrl": "https://images.unsplash.com/photo-1661352754488-4776516fcf31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWNod2VhciUyMHBhbnRzfGVufDB8fHx8MTc2MDgzNTQ2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "techwear pants"
     },
     {
       "id": "prod_005",
       "description": "Phase-Shift Satchel",
-      "imageUrl": "https://picsum.photos/seed/prod005/800/600",
+      "category": "Bags",
+      "price": 129.5,
+      "imageUrl": "https://images.unsplash.com/photo-1711885417386-bdd7b5a86b90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aXJpZGVzY2VudCUyMGJhZ3xlbnwwfHx8fDE3NjA4MzU0NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "iridescent bag"
     },
     {
       "id": "prod_006",
       "description": "Oracle Data-Gloves",
-      "imageUrl": "https://picsum.photos/seed/prod006/800/600",
+      "category": "Accessories",
+      "price": 79,
+      "imageUrl": "https://images.unsplash.com/photo-1585417238564-fcdf0b69535f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnbG93aW5nJTIwZ2xvdmVzfGVufDB8fHx8MTc2MDgzNTQ2MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "glowing gloves"
+    },
+    {
+      "id": "prod_007",
+      "description": "Echo-Knit Sweater",
+      "category": "Knitwear",
+      "price": 119.99,
+      "imageUrl": "https://images.unsplash.com/photo-1550597114-159b88a0b9e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxnZW9tZXRyaWMlMjBzd2VhdGVyfGVufDB8fHx8MTc2MDgzNTQ2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "geometric sweater"
+    },
+    {
+      "id": "prod_008",
+      "description": "Vortex Cargo Pants",
+      "category": "Trousers",
+      "price": 159,
+      "imageUrl": "https://images.unsplash.com/photo-1663242928958-659e42e34023?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiYWdneSUyMHBhbnRzfGVufDB8fHx8MTc2MDgzNTQ2MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "baggy pants"
     }
   ]
 }

@@ -3,6 +3,8 @@ import data from './placeholder-images.json';
 export type ImagePlaceholder = {
   id: string;
   description: string;
+  category: string;
+  price: number;
   imageUrl: string;
   imageHint: string;
 };
