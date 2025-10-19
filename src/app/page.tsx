@@ -42,20 +42,20 @@ export default function Home() {
           variants={fadeIn}
           className="font-headline text-5xl md:text-8xl lg:text-9xl font-bold z-10 tracking-tighter"
         >
-          Elegance in Motion
+          Define Your Form
         </motion.h1>
         <motion.p
           variants={fadeIn}
           className="mt-4 max-w-2xl text-lg md:text-xl text-muted-foreground z-10"
         >
-          Discover a new dimension of style. Where technology and high fashion converge into a singular, breathtaking experience.
+          Discover avant-garde pieces that merge sculptural form with fluid motion. Where technology and haute couture rewrite the rules.
         </motion.p>
         <motion.div
           variants={fadeIn}
           className="mt-8 z-10"
         >
           <Button asChild size="lg" className="font-headline transition-all hover:scale-105 hover:drop-shadow-glow-gold bg-foreground text-background hover:bg-foreground/80">
-            <Link href="/products">Explore Collection <ArrowRight className="ml-2" /></Link>
+            <Link href="/products">Explore The Collection <ArrowRight className="ml-2" /></Link>
           </Button>
         </motion.div>
       </motion.section>
@@ -70,23 +70,23 @@ export default function Home() {
       >
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
           <motion.div variants={fadeIn} className="lg:w-1/2">
-            <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight">Immersive 3D Showcase</h2>
+            <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight">An Interactive Canvas</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Experience our collection like never before. Our interactive 3D viewer brings every detail to life with dynamic lighting and true-to-life materials.
+              Experience our collection in a new dimension. Manipulate fabrics and silhouettes in our 3D studio to see how each piece moves, drapes, and interacts with light.
             </p>
             <div className="mt-6 flex items-center gap-4">
               <div className="w-12 h-12 bg-primary/10 border border-primary/30 rounded-lg flex items-center justify-center">
                 <Shirt className="w-6 h-6 text-primary" />
               </div>
-              <span className="font-headline text-lg">See every stitch, feel every texture.</span>
+              <span className="font-headline text-lg">Sculpt your own reality.</span>
             </div>
           </motion.div>
           <motion.div variants={fadeIn} className="lg:w-1/2 w-full h-96">
             <Card className="w-full h-full bg-card/50 border-2 border-dashed border-border flex items-center justify-center relative overflow-hidden">
                <div className="absolute inset-0 bg-grid-small-black/[0.05] [mask-image:radial-gradient(ellipse_at_center,transparent_60%,white)]"></div>
               <div className="text-center text-muted-foreground">
-                <p className="font-headline text-2xl">[ Interactive 3D Model ]</p>
-                <p className="text-sm mt-2">Coming soon to a screen near you.</p>
+                <p className="font-headline text-2xl">[ Interactive 3D Canvas ]</p>
+                <p className="text-sm mt-2">Where your vision takes shape.</p>
               </div>
             </Card>
           </motion.div>
@@ -102,9 +102,9 @@ export default function Home() {
         className="w-full py-20 md:py-32 px-4 bg-secondary"
       >
         <div className="max-w-7xl mx-auto">
-          <motion.h2 variants={fadeIn} className="text-center font-headline text-4xl md:text-5xl font-bold tracking-tight">Featured Pieces</motion.h2>
+          <motion.h2 variants={fadeIn} className="text-center font-headline text-4xl md:text-5xl font-bold tracking-tight">The AWKWARD Edit</motion.h2>
           <motion.p variants={fadeIn} className="text-center mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            A curated selection from our latest collection, embodying the spirit of awkward elegance.
+            A curated selection of signature pieces from our latest collection. The new vanguard of style.
           </motion.p>
           <motion.div variants={staggerContainer} className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {products.map((product) => (
@@ -145,13 +145,13 @@ export default function Home() {
            <motion.div variants={fadeIn}>
             <Bot className="w-16 h-16 mx-auto text-accent drop-shadow-glow-violet"/>
            </motion.div>
-          <motion.h2 variants={fadeIn} className="mt-6 font-headline text-4xl md:text-5xl font-bold tracking-tight">Meet Your AI Stylist</motion.h2>
+          <motion.h2 variants={fadeIn} className="mt-6 font-headline text-4xl md:text-5xl font-bold tracking-tight">The Oracle</motion.h2>
           <motion.p variants={fadeIn} className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            The Awkward Assistant combines your unique profile with real-time trend and weather data to curate looks that are perfectly you.
+            Our AI stylist, The Oracle, intuits your personal aesthetic, crafting looks that are both visionary and uniquely you. It sees your future style.
           </motion.p>
           <motion.div variants={fadeIn} className="mt-8">
             <Button asChild size="lg" variant="outline" className="font-headline transition-all hover:bg-accent/10 hover:text-accent-foreground hover:border-accent hover:scale-105">
-              <Link href="/stylist">Get Style Advice <ArrowRight className="ml-2" /></Link>
+              <Link href="/stylist">Consult The Oracle <ArrowRight className="ml-2" /></Link>
             </Button>
           </motion.div>
         </div>
