@@ -1,13 +1,10 @@
+
 'use client';
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import { PlaceHolderImages, ImagePlaceholder } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
-import React from 'react';
 
 const ProductCard = ({ product }: { product: ImagePlaceholder }) => {
   return (
@@ -23,7 +20,7 @@ const ProductCard = ({ product }: { product: ImagePlaceholder }) => {
             data-ai-hint={product.imageHint}
           />
         </div>
-        <CardContent className="p-4 text-center">
+        <CardContent className="p-4 text-center bg-card">
           <h3 className="font-headline text-lg font-medium text-foreground truncate">{product.description}</h3>
           <p className="text-muted-foreground text-sm">{product.category}</p>
           <p className="font-semibold text-foreground mt-2">${product.price?.toFixed(2)}</p>

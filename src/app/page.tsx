@@ -1,9 +1,10 @@
+
 'use client';
 
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, Bot, Shirt } from 'lucide-react';
+import { ArrowRight, Bot, Shirt, Video } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
@@ -59,39 +60,6 @@ export default function Home() {
           </Button>
         </motion.div>
       </motion.section>
-
-      {/* 3D Showcase Placeholder */}
-      <motion.section
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={staggerContainer}
-        className="w-full py-20 md:py-32 px-4"
-      >
-        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-          <motion.div variants={fadeIn} className="lg:w-1/2">
-            <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight">An Interactive Canvas</h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Experience our collection in a new dimension. Manipulate fabrics and silhouettes in our 3D studio to see how each piece moves, drapes, and interacts with light.
-            </p>
-            <div className="mt-6 flex items-center gap-4">
-              <div className="w-12 h-12 bg-primary/10 border border-primary/30 rounded-lg flex items-center justify-center">
-                <Shirt className="w-6 h-6 text-primary" />
-              </div>
-              <span className="font-headline text-lg">Sculpt your own reality.</span>
-            </div>
-          </motion.div>
-          <motion.div variants={fadeIn} className="lg:w-1/2 w-full h-96">
-            <Card className="w-full h-full bg-card/50 border-2 border-dashed border-border flex items-center justify-center relative overflow-hidden">
-               <div className="absolute inset-0 bg-grid-small-black/[0.05] [mask-image:radial-gradient(ellipse_at_center,transparent_60%,white)]"></div>
-              <div className="text-center text-muted-foreground">
-                <p className="font-headline text-2xl">[ Interactive 3D Canvas ]</p>
-                <p className="text-sm mt-2">Where your vision takes shape.</p>
-              </div>
-            </Card>
-          </motion.div>
-        </div>
-      </motion.section>
       
       {/* Featured Products */}
       <motion.section
@@ -121,9 +89,8 @@ export default function Home() {
                   </div>
                   <CardContent className="p-4 flex-1 flex flex-col bg-card">
                     <h3 className="font-headline text-lg font-semibold flex-1 leading-tight">{product.description}</h3>
-                    <Button variant="link" asChild className="mt-4 p-0 h-auto self-start text-primary">
-                      <Link href="/products">View Details <ArrowRight className="ml-2" /></Link>
-                    </Button>
+                    <p className="text-sm text-muted-foreground">{product.category}</p>
+                    <p className="mt-2 font-semibold">${product.price.toFixed(2)}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -132,7 +99,7 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* AI Stylist CTA */}
+      {/* AI Stylist & Studio CTA */}
       <motion.section
         initial="initial"
         whileInView="animate"
@@ -140,20 +107,35 @@ export default function Home() {
         variants={staggerContainer}
         className="w-full py-20 md:py-32 px-4"
       >
-        <div className="max-w-4xl mx-auto text-center relative">
-           <div className="absolute -inset-8 top-1/2 -translate-y-1/2 bg-accent/10 rounded-full blur-3xl -z-10"></div>
-           <motion.div variants={fadeIn}>
-            <Bot className="w-16 h-16 mx-auto text-accent drop-shadow-glow-violet"/>
-           </motion.div>
-          <motion.h2 variants={fadeIn} className="mt-6 font-headline text-4xl md:text-5xl font-bold tracking-tight">The Oracle</motion.h2>
-          <motion.p variants={fadeIn} className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Our AI stylist, The Oracle, intuits your personal aesthetic, crafting looks that are both visionary and uniquely you. It sees your future style.
-          </motion.p>
-          <motion.div variants={fadeIn} className="mt-8">
-            <Button asChild size="lg" variant="outline" className="font-headline transition-all hover:bg-accent/10 hover:text-accent-foreground hover:border-accent hover:scale-105">
-              <Link href="/stylist">Consult The Oracle <ArrowRight className="ml-2" /></Link>
-            </Button>
-          </motion.div>
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
+            {/* AI Stylist */}
+            <motion.div variants={fadeIn} className="text-center lg:text-left relative">
+                <div className="absolute -inset-8 top-1/2 -translate-y-1/2 bg-accent/5 rounded-full blur-3xl -z-10"></div>
+                <Bot className="w-16 h-16 mx-auto lg:mx-0 text-accent drop-shadow-glow-violet"/>
+                <h2 className="mt-6 font-headline text-4xl md:text-5xl font-bold tracking-tight">The Oracle</h2>
+                <p className="mt-4 max-w-2xl mx-auto lg:mx-0 text-lg text-muted-foreground">
+                    Our AI stylist, The Oracle, intuits your personal aesthetic, crafting looks that are both visionary and uniquely you. It sees your future style.
+                </p>
+                <div className="mt-8">
+                    <Button asChild size="lg" variant="outline" className="font-headline transition-all hover:bg-accent/10 hover:text-accent-foreground hover:border-accent hover:scale-105">
+                        <Link href="/stylist">Consult The Oracle <ArrowRight className="ml-2" /></Link>
+                    </Button>
+                </div>
+            </motion.div>
+            {/* AI Studio */}
+            <motion.div variants={fadeIn} className="text-center lg:text-left relative">
+                <div className="absolute -inset-8 top-1/2 -translate-y-1/2 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+                <Video className="w-16 h-16 mx-auto lg:mx-0 text-primary drop-shadow-glow-gold"/>
+                <h2 className="mt-6 font-headline text-4xl md:text-5xl font-bold tracking-tight">AI Studio</h2>
+                <p className="mt-4 max-w-2xl mx-auto lg:mx-0 text-lg text-muted-foreground">
+                    Bring your ideas to life. Generate stunning, animated product mockups from simple descriptions using generative AI.
+                </p>
+                <div className="mt-8">
+                    <Button asChild size="lg" variant="outline" className="font-headline transition-all hover:bg-primary/10 hover:text-primary-foreground hover:border-primary hover:scale-105">
+                        <Link href="/studio">Create a Mockup <ArrowRight className="ml-2" /></Link>
+                    </Button>
+                </div>
+            </motion.div>
         </div>
       </motion.section>
     </div>
