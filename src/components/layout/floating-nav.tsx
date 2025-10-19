@@ -74,7 +74,7 @@ export default function FloatingNav() {
                         href={item.href}
                         onClick={() => setIsOpen(false)}
                         className={cn(
-                          "w-14 h-14 rounded-full flex items-center justify-center bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-lg",
+                          "w-14 h-14 rounded-full flex items-center justify-center bg-card hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-lg",
                           pathname === item.href ? "bg-primary text-primary-foreground" : "text-foreground"
                         )}
                         aria-label={item.label}
@@ -95,7 +95,7 @@ export default function FloatingNav() {
           variants={orbVariants}
           animate={isOpen ? 'open' : 'closed'}
           onClick={() => setIsOpen(!isOpen)}
-          className="w-20 h-20 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-2xl drop-shadow-glow-gold focus:outline-none focus:ring-4 focus:ring-primary/50 relative z-10"
+          className="w-20 h-20 rounded-full bg-foreground text-background flex items-center justify-center shadow-2xl drop-shadow-glow-gold focus:outline-none focus:ring-4 focus:ring-primary/50 relative z-10"
           aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
         >
           <AnimatePresence mode="wait">
@@ -106,7 +106,7 @@ export default function FloatingNav() {
               exit={{ opacity: 0, scale: 0.5, rotate: 90 }}
               transition={{ duration: 0.2 }}
             >
-              {isOpen ? <X className="w-8 h-8" /> : <div className="w-8 h-8 rounded-full border-2 border-primary-foreground animate-pulse" />}
+              {isOpen ? <X className="w-8 h-8" /> : <div className="w-8 h-8 rounded-full border-2 border-background animate-pulse" />}
             </motion.div>
           </AnimatePresence>
         </motion.button>

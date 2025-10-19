@@ -15,7 +15,7 @@ const fadeIn = {
 };
 
 export default function Home() {
-  const products = PlaceHolderImages.slice(0, 3);
+  const products = PlaceHolderImages.slice(0, 8);
 
   return (
     <div className="flex flex-col items-center text-foreground overflow-x-hidden">
@@ -26,7 +26,7 @@ export default function Home() {
         transition={{ duration: 1 }}
         className="w-full h-[calc(100vh-80px)] flex flex-col justify-center items-center relative text-center px-4"
       >
-        <div className="absolute inset-0 bg-grid-small-white/[0.1] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+        <div className="absolute inset-0 bg-grid-small-black/[0.05] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,white)]"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background"></div>
 
         <motion.h1
@@ -51,7 +51,7 @@ export default function Home() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="mt-8 z-10"
         >
-          <Button asChild size="lg" className="font-headline transition-all hover:scale-105 hover:drop-shadow-glow-gold">
+          <Button asChild size="lg" className="font-headline transition-all hover:scale-105 hover:drop-shadow-glow-gold bg-foreground text-background hover:bg-foreground/80">
             <Link href="/products">Explore Collection <ArrowRight className="ml-2" /></Link>
           </Button>
         </motion.div>
@@ -80,7 +80,7 @@ export default function Home() {
           </div>
           <div className="lg:w-1/2 w-full h-96">
             <Card className="w-full h-full bg-card/50 border-2 border-dashed border-border flex items-center justify-center relative overflow-hidden">
-               <div className="absolute inset-0 bg-grid-small-white/[0.05] [mask-image:radial-gradient(ellipse_at_center,transparent_60%,black)]"></div>
+               <div className="absolute inset-0 bg-grid-small-black/[0.05] [mask-image:radial-gradient(ellipse_at_center,transparent_60%,white)]"></div>
               <div className="text-center text-muted-foreground">
                 <p className="font-headline text-2xl">[ Interactive 3D Model ]</p>
                 <p className="text-sm mt-2">Coming soon to a screen near you.</p>
@@ -96,18 +96,18 @@ export default function Home() {
         initial="initial"
         whileInView="animate"
         viewport={{ once: true, amount: 0.2 }}
-        className="w-full py-20 md:py-32 px-4 bg-secondary/20"
+        className="w-full py-20 md:py-32 px-4 bg-secondary"
       >
         <div className="max-w-7xl mx-auto">
           <h2 className="text-center font-headline text-4xl md:text-5xl font-bold tracking-tight">Featured Pieces</h2>
           <p className="text-center mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
             A curated selection from our latest collection, embodying the spirit of awkward elegance.
           </p>
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {products.map((product) => (
               <motion.div key={product.id} whileHover={{ y: -8 }} transition={{ type: 'spring', stiffness: 300 }}>
-                <Card className="overflow-hidden group h-full flex flex-col">
-                  <div className="aspect-[4/3] relative overflow-hidden">
+                <Card className="overflow-hidden group h-full flex flex-col shadow-sm hover:shadow-lg transition-shadow duration-300">
+                  <div className="aspect-[3/4] relative overflow-hidden">
                     <Image
                       src={product.imageUrl}
                       alt={product.description}
@@ -116,8 +116,8 @@ export default function Home() {
                       data-ai-hint={product.imageHint}
                     />
                   </div>
-                  <CardContent className="p-6 flex-1 flex flex-col">
-                    <h3 className="font-headline text-xl font-semibold flex-1">{product.description}</h3>
+                  <CardContent className="p-4 flex-1 flex flex-col bg-card">
+                    <h3 className="font-headline text-lg font-semibold flex-1 leading-tight">{product.description}</h3>
                     <Button variant="link" asChild className="mt-4 p-0 h-auto self-start text-primary">
                       <Link href="/products">View Details <ArrowRight className="ml-2" /></Link>
                     </Button>
