@@ -34,20 +34,29 @@ export default function Home() {
         initial="initial"
         animate="animate"
         variants={staggerContainer}
-        className="w-full h-[calc(100vh-80px)] flex flex-col justify-center items-center relative text-center px-4"
+        className="w-full h-[calc(100vh-80px)] flex flex-col justify-center items-center relative text-center px-4 overflow-hidden"
       >
-        <div className="absolute inset-0 bg-grid-small-black/[0.05] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,white)]"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background"></div>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute z-0 w-auto min-w-full min-h-full max-w-none left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover"
+        >
+          <source src="https://videos.pexels.com/video-files/7578544/7578544-hd_1920_1080_25fps.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="absolute inset-0 bg-black/50 z-5"></div>
 
         <motion.h1
           variants={fadeIn}
-          className="font-headline text-5xl md:text-8xl lg:text-9xl font-bold z-10 tracking-tighter"
+          className="font-headline text-5xl md:text-8xl lg:text-9xl font-bold z-10 tracking-tighter text-white"
         >
           Define Your Form
         </motion.h1>
         <motion.p
           variants={fadeIn}
-          className="mt-4 max-w-2xl text-lg md:text-xl text-muted-foreground z-10"
+          className="mt-4 max-w-2xl text-lg md:text-xl text-white/80 z-10"
         >
           Discover avant-garde pieces that merge sculptural form with fluid motion. Where technology and haute couture rewrite the rules.
         </motion.p>
@@ -55,7 +64,7 @@ export default function Home() {
           variants={fadeIn}
           className="mt-8 z-10"
         >
-          <Button asChild size="lg" className="font-headline transition-all hover:scale-105 hover:drop-shadow-glow-gold bg-foreground text-background hover:bg-foreground/80">
+          <Button asChild size="lg" className="font-headline transition-all hover:scale-105 hover:drop-shadow-glow-gold bg-white text-black hover:bg-white/80">
             <Link href="/products">Explore The Collection <ArrowRight className="ml-2" /></Link>
           </Button>
         </motion.div>
