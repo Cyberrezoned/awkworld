@@ -114,12 +114,22 @@ export default function Home() {
         whileInView="animate"
         viewport={{ once: true, amount: 0.3 }}
         variants={staggerContainer}
-        className="w-full py-20 md:py-32 px-4"
+        className="w-full py-20 md:py-32 px-4 relative overflow-hidden"
       >
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
+        <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute z-0 w-auto min-w-full min-h-full max-w-none left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover"
+        >
+            <source src="https://videos.pexels.com/video-files/8064834/8064834-hd_1920_1080_25fps.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <div className="absolute inset-0 bg-background/80 z-5"></div>
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 relative z-10">
             {/* AI Stylist */}
-            <motion.div variants={fadeIn} className="text-center lg:text-left relative">
-                <div className="absolute -inset-8 top-1/2 -translate-y-1/2 bg-accent/5 rounded-full blur-3xl -z-10"></div>
+            <motion.div variants={fadeIn} className="text-center lg:text-left">
                 <Bot className="w-16 h-16 mx-auto lg:mx-0 text-accent drop-shadow-glow-violet"/>
                 <h2 className="mt-6 font-headline text-4xl md:text-5xl font-bold tracking-tight">The Oracle</h2>
                 <p className="mt-4 max-w-2xl mx-auto lg:mx-0 text-lg text-muted-foreground">
@@ -132,8 +142,7 @@ export default function Home() {
                 </div>
             </motion.div>
             {/* AI Studio */}
-            <motion.div variants={fadeIn} className="text-center lg:text-left relative">
-                <div className="absolute -inset-8 top-1/2 -translate-y-1/2 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+            <motion.div variants={fadeIn} className="text-center lg:text-left">
                 <Video className="w-16 h-16 mx-auto lg:mx-0 text-primary drop-shadow-glow-gold"/>
                 <h2 className="mt-6 font-headline text-4xl md:text-5xl font-bold tracking-tight">The Creator's Forge</h2>
                 <p className="mt-4 max-w-2xl mx-auto lg:mx-0 text-lg text-muted-foreground">
@@ -150,3 +159,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
