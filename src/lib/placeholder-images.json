@@ -95,6 +95,70 @@
       "price": 780,
       "imageUrl": "https://images.unsplash.com/photo-1590797334ACB4-394997625145?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "white boots"
+    },
+    {
+      "id": "prod_013",
+      "description": "Deconstructed Knit Sweater",
+      "category": "Tops",
+      "price": 480,
+      "imageUrl": "https://images.unsplash.com/photo-1616852369524-3b7722d33458?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "man sweater"
+    },
+    {
+      "id": "prod_014",
+      "description": "Vinyl Cargo Pants",
+      "category": "Trousers",
+      "price": 390,
+      "imageUrl": "https://images.unsplash.com/photo-1541026391969-6d60555949d4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "man pants"
+    },
+    {
+      "id": "prod_015",
+      "description": "Iridescent Puffer Jacket",
+      "category": "Outerwear",
+      "price": 920,
+      "imageUrl": "https://images.unsplash.com/photo-1580459869683-a38698547209?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "woman jacket"
+    },
+    {
+      "id": "prod_016",
+      "description": "Kinetic-Frame Sunglasses",
+      "category": "Accessories",
+      "price": 320,
+      "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "sunglasses fashion"
+    },
+    {
+      "id": "prod_017",
+      "description": "Bio-Luminescent Sneakers",
+      "category": "Footwear",
+      "price": 750,
+      "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "red sneaker"
+    },
+    {
+      "id": "prod_018",
+      "description": "Liquid Metal Corset",
+      "category": "Tops",
+      "price": 610,
+      "imageUrl": "https://images.unsplash.com/photo-1604176354204-9268737828e4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "denim jacket"
+    },
+    {
+      "id": "prod_019",
+      "description": "Augmented Reality Earrings",
+      "category": "Accessories",
+      "price": 450,
+      "imageUrl": "https://images.unsplash.com/photo-1616421110593-b3109a967c76?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "woman earring"
+    },
+    {
+      "id": "prod_020",
+      "description": "Zero-Gravity Parka",
+      "category": "Outerwear",
+      "price": 1250,
+      "imageUrl": "https://images.unsplash.com/photo-1515734674582-29010bb37906?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "woman fashion"
     }
   ]
 }
