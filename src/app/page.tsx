@@ -46,7 +46,7 @@ export default function Home() {
           <source src="https://videos.pexels.com/video-files/7578544/7578544-hd_1920_1080_25fps.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute inset-0 bg-black/50 z-5"></div>
+        <div className="absolute inset-0 bg-black/70 z-5"></div>
 
         <motion.h1
           variants={fadeIn}
@@ -64,7 +64,7 @@ export default function Home() {
           variants={fadeIn}
           className="mt-8 z-10"
         >
-          <Button asChild size="lg" className="font-headline transition-all hover:scale-105 hover:drop-shadow-glow-gold bg-white text-black hover:bg-white/80">
+          <Button asChild size="lg" className="font-headline transition-all hover:scale-105 hover:drop-shadow-glow-gold bg-primary text-primary-foreground hover:bg-primary/90">
             <Link href="/products">Explore The Collection <ArrowRight className="ml-2" /></Link>
           </Button>
         </motion.div>
@@ -76,7 +76,7 @@ export default function Home() {
         whileInView="animate"
         viewport={{ once: true, amount: 0.1 }}
         variants={staggerContainer}
-        className="w-full py-20 md:py-32 px-4 bg-secondary"
+        className="w-full py-20 md:py-32 px-4 bg-background"
       >
         <div className="max-w-7xl mx-auto">
           <motion.h2 variants={fadeIn} className="text-center font-headline text-4xl md:text-5xl font-bold tracking-tight">The AWKWARD Edit</motion.h2>
@@ -86,7 +86,7 @@ export default function Home() {
           <motion.div variants={staggerContainer} className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {products.map((product) => (
               <motion.div key={product.id} variants={fadeIn} whileHover={{ y: -8 }} transition={{ type: 'spring', stiffness: 300 }}>
-                <Card className="overflow-hidden group h-full flex flex-col shadow-sm hover:shadow-lg transition-shadow duration-300">
+                <Card className="overflow-hidden group h-full flex flex-col shadow-sm hover:shadow-lg transition-shadow duration-300 border-border/50 bg-card">
                   <div className="aspect-[3/4] relative overflow-hidden">
                     <Image
                       src={product.imageUrl}
@@ -96,7 +96,7 @@ export default function Home() {
                       data-ai-hint={product.imageHint}
                     />
                   </div>
-                  <CardContent className="p-4 flex-1 flex flex-col bg-card">
+                  <CardContent className="p-4 flex-1 flex flex-col">
                     <h3 className="font-headline text-lg font-semibold flex-1 leading-tight">{product.description}</h3>
                     <p className="text-sm text-muted-foreground">{product.category}</p>
                     <p className="mt-2 font-semibold">${product.price.toFixed(2)}</p>
@@ -126,7 +126,7 @@ export default function Home() {
                     Our AI stylist, The Oracle, intuits your personal aesthetic, crafting looks that are both visionary and uniquely you. It sees your future style.
                 </p>
                 <div className="mt-8">
-                    <Button asChild size="lg" variant="outline" className="font-headline transition-all hover:bg-accent/10 hover:text-accent-foreground hover:border-accent hover:scale-105">
+                    <Button asChild size="lg" variant="outline" className="font-headline transition-all hover:bg-accent/10 hover:text-accent hover:border-accent hover:scale-105">
                         <Link href="/stylist">Consult The Oracle <ArrowRight className="ml-2" /></Link>
                     </Button>
                 </div>
@@ -140,7 +140,7 @@ export default function Home() {
                     Bring your ideas to life. Generate stunning, animated product mockups from simple descriptions using generative AI.
                 </p>
                 <div className="mt-8">
-                    <Button asChild size="lg" variant="outline" className="font-headline transition-all hover:bg-primary/10 hover:text-primary-foreground hover:border-primary hover:scale-105">
+                    <Button asChild size="lg" variant="outline" className="font-headline transition-all hover:bg-primary/10 hover:border-primary hover:scale-105">
                         <Link href="/studio">Create a Mockup <ArrowRight className="ml-2" /></Link>
                     </Button>
                 </div>

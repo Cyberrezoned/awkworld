@@ -20,7 +20,7 @@ const ProductCard = ({ product }: { product: ImagePlaceholder }) => {
             data-ai-hint={product.imageHint}
           />
         </div>
-        <CardContent className="p-4 text-center bg-card">
+        <CardContent className="p-4 text-center bg-transparent">
           <h3 className="font-headline text-lg font-medium text-foreground truncate">{product.description}</h3>
           <p className="text-muted-foreground text-sm">{product.category}</p>
           <p className="font-semibold text-foreground mt-2">${product.price?.toFixed(2)}</p>
