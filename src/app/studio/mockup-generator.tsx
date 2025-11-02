@@ -63,7 +63,7 @@ export default function MockupGenerator() {
   return (
     <Card className="bg-card/50 border-border/50">
       <CardHeader>
-        <CardTitle className="font-headline text-2xl">Generate Mockup</CardTitle>
+        <CardTitle className="font-headline text-2xl">Describe Your Vision</CardTitle>
         <CardDescription>Describe your product and let our AI create a video mockup.</CardDescription>
       </CardHeader>
       <CardContent>
@@ -131,7 +131,7 @@ export default function MockupGenerator() {
                   Generating...
                 </>
               ) : (
-                'Create Animation'
+                'Forge Animation'
               )}
             </Button>
           </form>

@@ -4,7 +4,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, Bot, Shirt, Video } from 'lucide-react';
+import { ArrowRight, Bot, Video } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
@@ -52,20 +52,20 @@ export default function Home() {
           variants={fadeIn}
           className="font-headline text-5xl md:text-8xl lg:text-9xl font-bold z-10 tracking-tighter text-white"
         >
-          Define Your Form
+          Welcome to AWKWORLD
         </motion.h1>
         <motion.p
           variants={fadeIn}
           className="mt-4 max-w-2xl text-lg md:text-xl text-white/80 z-10"
         >
-          Discover avant-garde pieces that merge sculptural form with fluid motion. Where technology and haute couture rewrite the rules.
+          Step into a new dimension of style. An immersive world where avant-garde fashion and digital identity collide.
         </motion.p>
         <motion.div
           variants={fadeIn}
           className="mt-8 z-10"
         >
           <Button asChild size="lg" className="font-headline transition-all hover:scale-105 hover:drop-shadow-glow-gold bg-primary text-primary-foreground hover:bg-primary/90">
-            <Link href="/products">Explore The Collection <ArrowRight className="ml-2" /></Link>
+            <Link href="/products">Explore The Realms <ArrowRight className="ml-2" /></Link>
           </Button>
         </motion.div>
       </motion.section>
@@ -79,9 +79,9 @@ export default function Home() {
         className="w-full py-20 md:py-32 px-4 bg-background"
       >
         <div className="max-w-7xl mx-auto">
-          <motion.h2 variants={fadeIn} className="text-center font-headline text-4xl md:text-5xl font-bold tracking-tight">The AWKWARD Edit</motion.h2>
+          <motion.h2 variants={fadeIn} className="text-center font-headline text-4xl md:text-5xl font-bold tracking-tight">Realms of Style</motion.h2>
           <motion.p variants={fadeIn} className="text-center mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            A curated selection of signature pieces from our latest collection. The new vanguard of style.
+            Explore curated collections from the different realms of AWKWORLD, where each piece tells a story.
           </motion.p>
           <motion.div variants={staggerContainer} className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {products.map((product) => (
@@ -123,7 +123,7 @@ export default function Home() {
                 <Bot className="w-16 h-16 mx-auto lg:mx-0 text-accent drop-shadow-glow-violet"/>
                 <h2 className="mt-6 font-headline text-4xl md:text-5xl font-bold tracking-tight">The Oracle</h2>
                 <p className="mt-4 max-w-2xl mx-auto lg:mx-0 text-lg text-muted-foreground">
-                    Our AI stylist, The Oracle, intuits your personal aesthetic, crafting looks that are both visionary and uniquely you. It sees your future style.
+                    In AWKWORLD, The Oracle is your guide. An AI stylist that intuits your aesthetic, crafting looks that are both visionary and uniquely you.
                 </p>
                 <div className="mt-8">
                     <Button asChild size="lg" variant="outline" className="font-headline transition-all hover:bg-accent/10 hover:text-accent hover:border-accent hover:scale-105">
@@ -135,13 +135,13 @@ export default function Home() {
             <motion.div variants={fadeIn} className="text-center lg:text-left relative">
                 <div className="absolute -inset-8 top-1/2 -translate-y-1/2 bg-primary/5 rounded-full blur-3xl -z-10"></div>
                 <Video className="w-16 h-16 mx-auto lg:mx-0 text-primary drop-shadow-glow-gold"/>
-                <h2 className="mt-6 font-headline text-4xl md:text-5xl font-bold tracking-tight">AI Studio</h2>
+                <h2 className="mt-6 font-headline text-4xl md:text-5xl font-bold tracking-tight">The Creator's Forge</h2>
                 <p className="mt-4 max-w-2xl mx-auto lg:mx-0 text-lg text-muted-foreground">
-                    Bring your ideas to life. Generate stunning, animated product mockups from simple descriptions using generative AI.
+                   Forge your own reality. Generate stunning, animated product mockups from simple descriptions using generative AI.
                 </p>
                 <div className="mt-8">
                     <Button asChild size="lg" variant="outline" className="font-headline transition-all hover:bg-primary/10 hover:border-primary hover:scale-105">
-                        <Link href="/studio">Create a Mockup <ArrowRight className="ml-2" /></Link>
+                        <Link href="/studio">Enter the Forge <ArrowRight className="ml-2" /></Link>
                     </Button>
                 </div>
             </motion.div>
