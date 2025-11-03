@@ -2,163 +2,163 @@
   "placeholderImages": [
     {
       "id": "prod_001",
-      "description": "Cyber-Punk Reflective Visor",
-      "category": "Accessories",
-      "price": 180,
-      "imageUrl": "https://images.unsplash.com/photo-1588515753173-49a2a4b8b3cd?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "reflective visor"
+      "description": "Structured Wool Blazer",
+      "category": "Outerwear",
+      "price": 450,
+      "imageUrl": "https://images.unsplash.com/photo-1572804013427-4d7ca726b65b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "woman blazer"
     },
     {
       "id": "prod_002",
-      "description": "Oversized Utility Trench",
-      "category": "Outerwear",
-      "price": 850,
-      "imageUrl": "https://images.unsplash.com/photo-1550928432-4e47768e4d3c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "man trenchcoat"
+      "description": "Silk Cowl Neck Camisole",
+      "category": "Tops",
+      "price": 180,
+      "imageUrl": "https://images.unsplash.com/photo-1620799140408-edc6d5f96333?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "silk top"
     },
     {
       "id": "prod_003",
-      "description": "Chromatic Flare Trousers",
+      "description": "Tailored Wide-Leg Trousers",
       "category": "Trousers",
-      "price": 420,
-      "imageUrl": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "colorful pants"
+      "price": 280,
+      "imageUrl": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "woman trousers"
     },
     {
       "id": "prod_004",
-      "description": "Architectural Platform Boot",
+      "description": "Italian Leather Loafers",
       "category": "Footwear",
-      "price": 650,
-      "imageUrl": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "sneaker shoe"
+      "price": 320,
+      "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "leather shoes"
     },
     {
       "id": "prod_005",
-      "description": "Transparent Geo-Tote",
+      "description": "Classic Leather Tote Bag",
       "category": "Bags",
       "price": 350,
-      "imageUrl": "https://images.unsplash.com/photo-1566150905458-1bf1f299756b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "pink handbag"
+      "imageUrl": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "leather handbag"
     },
     {
       "id": "prod_006",
-      "description": "Chainmail Shoulder Piece",
+      "description": "Gold Link Chain Necklace",
       "category": "Accessories",
-      "price": 310,
-      "imageUrl": "https://images.unsplash.com/photo-1548995343-4d560a9a933d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "woman portrait"
+      "price": 210,
+      "imageUrl": "https://images.unsplash.com/photo-1611082638847-a3c39689a744?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "gold necklace"
     },
     {
       "id": "prod_007",
-      "description": "Asymmetric Cut-Out Dress",
+      "description": "Satin Slip Midi Dress",
       "category": "Dresses",
-      "price": 720,
-      "imageUrl": "https://images.unsplash.com/photo-1518622358385-8ea7d0596924?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "woman posing"
+      "price": 480,
+      "imageUrl": "https://images.unsplash.com/photo-1600950338523-228f46b52a55?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "satin dress"
     },
     {
       "id": "prod_008",
-      "description": "Goggle-Inspired Shades",
+      "description": "Classic Aviator Sunglasses",
       "category": "Accessories",
-      "price": 290,
-      "imageUrl": "https://images.unsplash.com/photo-15229324524 labours?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "woman sunglasses"
+      "price": 190,
+      "imageUrl": "https://images.unsplash.com/photo-1577803645773-f144005fb2d6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "aviator sunglasses"
     },
     {
       "id": "prod_009",
-      "description": "Layered Tulle Skirt",
+      "description": "Ribbed Knit Midi Skirt",
       "category": "Skirts",
-      "price": 380,
-      "imageUrl": "https://images.unsplash.com/photo-1596700424115-0f5c3b5d9185?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 220,
+      "imageUrl": "https://images.unsplash.com/photo-1595507109927-69b82f427f79?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "woman skirt"
     },
     {
       "id": "prod_010",
-      "description": "Puffer Sleeve Jacket",
-      "category": "Outerwear",
-      "price": 550,
-      "imageUrl": "https://images.unsplash.com/photo-1579298245158-693d796155d3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "man posing"
+      "description": "Linen Button-Down Shirt",
+      "category": "Tops",
+      "price": 150,
+      "imageUrl": "https://images.unsplash.com/photo-1589310243389-96a5483213a8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "linen shirt"
     },
     {
       "id": "prod_011",
-      "description": "Holographic Bodysuit",
+      "description": "Cashmere Crewneck Sweater",
       "category": "Tops",
-      "price": 250,
-      "imageUrl": "https://images.unsplash.com/photo-1554260570-e9689a3418b8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "woman fashion"
+      "price": 350,
+      "imageUrl": "https://images.unsplash.com/photo-1563178406-4cdc2922acbc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "woman sweater"
     },
     {
       "id": "prod_012",
-      "description": "Neo-Cowboy Boots",
+      "description": "Suede Ankle Boots",
       "category": "Footwear",
-      "price": 780,
-      "imageUrl": "https://images.unsplash.com/photo-1590797334ACB4-394997625145?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "white boots"
+      "price": 420,
+      "imageUrl": "https://images.unsplash.com/photo-1608256246258-53e7a57b55d9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "suede boots"
     },
     {
       "id": "prod_013",
-      "description": "Deconstructed Knit Sweater",
-      "category": "Tops",
-      "price": 480,
-      "imageUrl": "https://images.unsplash.com/photo-1616852369524-3b7722d33458?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "man sweater"
-    },
-    {
-      "id": "prod_014",
-      "description": "Vinyl Cargo Pants",
+      "description": "High-Rise Straight-Leg Jeans",
       "category": "Trousers",
-      "price": 390,
-      "imageUrl": "https://images.unsplash.com/photo-1541026391969-6d60555949d4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "man pants"
-    },
-    {
-      "id": "prod_015",
-      "description": "Iridescent Puffer Jacket",
-      "category": "Outerwear",
-      "price": 920,
-      "imageUrl": "https://images.unsplash.com/photo-1580459869683-a38698547209?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "woman jacket"
-    },
-    {
-      "id": "prod_016",
-      "description": "Kinetic-Frame Sunglasses",
-      "category": "Accessories",
-      "price": 320,
-      "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "sunglasses fashion"
-    },
-    {
-      "id": "prod_017",
-      "description": "Bio-Luminescent Sneakers",
-      "category": "Footwear",
-      "price": 750,
-      "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "red sneaker"
-    },
-    {
-      "id": "prod_018",
-      "description": "Liquid Metal Corset",
-      "category": "Tops",
-      "price": 610,
+      "price": 240,
       "imageUrl": "https://images.unsplash.com/photo-1604176354204-9268737828e4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "denim jacket"
     },
     {
-      "id": "prod_019",
-      "description": "Augmented Reality Earrings",
+      "id": "prod_014",
+      "description": "Classic Trench Coat",
+      "category": "Outerwear",
+      "price": 580,
+      "imageUrl": "https://images.unsplash.com/photo-1574279606130-1211a3ea3245?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "woman trenchcoat"
+    },
+    {
+      "id": "prod_015",
+      "description": "Minimalist Gold Hoops",
       "category": "Accessories",
-      "price": 450,
+      "price": 120,
       "imageUrl": "https://images.unsplash.com/photo-1616421110593-b3109a967c76?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "woman earring"
     },
     {
-      "id": "prod_020",
-      "description": "Zero-Gravity Parka",
+      "id": "prod_016",
+      "description": "Chunky Knit Cardigan",
       "category": "Outerwear",
-      "price": 1250,
-      "imageUrl": "https://images.unsplash.com/photo-1515734674582-29010bb37906?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "woman fashion"
+      "price": 310,
+      "imageUrl": "https://images.unsplash.com/photo-1576426863848-c21f68c6aa98?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "woman cardigan"
+    },
+    {
+      "id": "prod_017",
+      "description": "Leather Crossbody Bag",
+      "category": "Bags",
+      "price": 290,
+      "imageUrl": "https://images.unsplash.com/photo-1600852233224-3a7888b78a0a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "leather bag"
+    },
+    {
+      "id": "prod_018",
+      "description": "A-Line Mini Dress",
+      "category": "Dresses",
+      "price": 360,
+      "imageUrl": "https://images.unsplash.com/photo-1598033221334-0268596f2a58?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "woman dress"
+    },
+    {
+      "id": "prod_019",
+      "description": "White Leather Sneakers",
+      "category": "Footwear",
+      "price": 250,
+      "imageUrl": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "white sneakers"
+    },
+    {
+      "id": "prod_020",
+      "description": "Classic Wool Scarf",
+      "category": "Accessories",
+      "price": 140,
+      "imageUrl": "https://images.unsplash.com/photo-1542062688-692b678b1e4e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "woman scarf"
     }
   ]
 }
