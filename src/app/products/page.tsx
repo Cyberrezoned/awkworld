@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
@@ -13,15 +13,23 @@ import { motion } from 'framer-motion';
 
 const ProductCard = ({ product }: { product: ImagePlaceholder }) => {
   return (
-    <motion.div whileHover={{ y: -8 }} transition={{ type: 'spring', stiffness: 300 }}>
+    <motion.div
+      whileHover={{
+        scale: 1.05,
+        rotateY: 10,
+        boxShadow: '0px 20px 30px rgba(0, 0, 0, 0.2)',
+      }}
+      transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+      className="relative"
+    >
         <Link href={`/products/${product.id}`} className="group block">
-        <Card className="overflow-hidden border-border/50 shadow-sm hover:shadow-xl transition-shadow duration-300 rounded-lg bg-card h-full flex flex-col">
+        <Card className="overflow-hidden border-border/50 shadow-sm transition-shadow duration-300 rounded-lg bg-card h-full flex flex-col">
             <div className="aspect-[3/4] relative overflow-hidden">
             <Image
                 src={product.imageUrl}
                 alt={product.description}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
                 sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                 data-ai-hint={product.imageHint}
             />
@@ -48,8 +56,7 @@ export default function ProductsPage() {
   const totalPages = Math.ceil(totalProducts / productsPerPage);
 
   const startIndex = (currentPage - 1) * productsPerPage;
-  const endIndex = startIndex + productsPerPage;
-  const paginatedProducts = PlaceHolderImages.slice(startIndex, endIndex);
+  const paginatedProducts = PlaceHolderImages.slice(startIndex, startIndex + productsPerPage);
   
   const createPageURL = (pageNumber: number) => {
     const params = new URLSearchParams(searchParams);

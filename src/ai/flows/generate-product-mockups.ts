@@ -1,3 +1,4 @@
+
 'use server';
 /**
  * @fileOverview Flow for generating animated product mockups from product data using AI.
@@ -28,22 +29,6 @@ export async function generateProductMockup(input: GenerateProductMockupInput): 
   return generateProductMockupFlow(input);
 }
 
-const prompt = ai.definePrompt({
-  name: 'generateProductMockupPrompt',
-  input: {schema: GenerateProductMockupInputSchema},
-  output: {schema: GenerateProductMockupOutputSchema},
-  prompt: `You are an expert in creating product mockups. Based on the product data provided, generate a visually appealing and engaging animated mockup.
-
-Product Name: {{{productName}}}
-Product Description: {{{productDescription}}}
-Key Features: {{#each productFeatures}}{{{this}}}, {{/each}}
-Style: {{{style}}}
-
-Create a video mockup that showcases the product and its features in the specified style. Also, write a brief description of the generated mockup.
-
-Ensure the mockup is suitable for sharing with marketing teams for visualization and feedback.`,
-});
-
 const generateProductMockupFlow = ai.defineFlow(
   {
     name: 'generateProductMockupFlow',
@@ -51,10 +36,16 @@ const generateProductMockupFlow = ai.defineFlow(
     outputSchema: GenerateProductMockupOutputSchema,
   },
   async input => {
+    const prompt = `A cinematic, professional product video of: ${input.productName}.
+    Description: ${input.productDescription}.
+    Key Features to highlight: ${input.productFeatures.join(', ')}.
+    The visual style should be: ${input.style}.
+    The product should be presented on a clean, neutral background.`;
+
     // Use Veo to generate the video.
     let { operation } = await ai.generate({
       model: 'googleai/veo-2.0-generate-001',
-      prompt: input.productName + ", " + input.productDescription + ", style=" + input.style,
+      prompt: prompt,
       config: {
         durationSeconds: 5,
         aspectRatio: '16:9',
@@ -77,14 +68,14 @@ const generateProductMockupFlow = ai.defineFlow(
     }
 
     const video = operation.output?.message?.content.find((p) => !!p.media);
-    if (!video) {
+    if (!video || !video.media?.url) {
       throw new Error('Failed to find the generated video');
     }
 
     const fetch = (await import('node-fetch')).default;
     // Add API key before fetching the video.
     const videoDownloadResponse = await fetch(
-      `${video.media!.url}&key=${process.env.GEMINI_API_KEY}`
+      `${video.media.url}&key=${process.env.GEMINI_API_KEY}`
     );
     if (
       !videoDownloadResponse ||
@@ -94,16 +85,10 @@ const generateProductMockupFlow = ai.defineFlow(
       throw new Error('Failed to fetch video');
     }
 
-    const fs = require('fs');
-    const util = require('util');
-
-    const pipeline = util.promisify(require('stream').pipeline);
-    const pathToOutputFile = `/tmp/${input.productName.replace(/[^a-zA-Z0-9]/g, '')}.mp4`;
-
-    await pipeline(videoDownloadResponse.body, fs.createWriteStream(pathToOutputFile));
-
-    const base64Video = fs.readFileSync(pathToOutputFile, {encoding: 'base64'});
-    const mockupVideo = `data:video/mp4;base64,${base64Video}`;
+    // Read the video into a buffer and convert to Base64
+    const videoBuffer = await videoDownloadResponse.arrayBuffer();
+    const base64Video = Buffer.from(videoBuffer).toString('base64');
+    const mockupVideo = `data:${video.media.contentType || 'video/mp4'};base64,${base64Video}`;
 
     const description = `An animated mockup of ${input.productName} showcasing its key features in a ${input.style} style.`;
 
