@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -46,10 +47,9 @@ export default function ProductsPage() {
   const totalProducts = PlaceHolderImages.length;
   const totalPages = Math.ceil(totalProducts / productsPerPage);
 
-  const paginatedProducts = PlaceHolderImages.slice(
-    (currentPage - 1) * productsPerPage,
-    currentPage * productsPerPage
-  );
+  const startIndex = (currentPage - 1) * productsPerPage;
+  const endIndex = startIndex + productsPerPage;
+  const paginatedProducts = PlaceHolderImages.slice(startIndex, endIndex);
   
   const createPageURL = (pageNumber: number) => {
     const params = new URLSearchParams(searchParams);
