@@ -37,12 +37,12 @@ export default function Home() {
         className="w-full h-[calc(100vh-80px)] flex flex-col justify-center items-center relative text-center px-4 overflow-hidden"
       >
         <Image
-            src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Fashion background"
-            fill
-            className="object-cover object-top"
-            priority
-          />
+          src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Fashion background"
+          fill
+          className="object-cover object-top"
+          priority
+        />
         <div className="absolute inset-0 bg-black/50 z-5"></div>
 
         <motion.h1
@@ -83,22 +83,24 @@ export default function Home() {
           <motion.div variants={staggerContainer} className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {products.map((product) => (
               <motion.div key={product.id} variants={fadeIn} whileHover={{ y: -8 }} transition={{ type: 'spring', stiffness: 300 }}>
-                <Card className="overflow-hidden group h-full flex flex-col shadow-sm hover:shadow-lg transition-shadow duration-300 border-border/50 bg-card">
-                  <div className="aspect-[3/4] relative overflow-hidden">
-                    <Image
-                      src={product.imageUrl}
-                      alt={product.description}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      data-ai-hint={product.imageHint}
-                    />
-                  </div>
-                  <CardContent className="p-4 flex-1 flex flex-col">
-                    <h3 className="font-headline text-lg font-semibold flex-1 leading-tight">{product.description}</h3>
-                    <p className="text-sm text-muted-foreground">{product.category}</p>
-                    <p className="mt-2 font-semibold">${product.price.toFixed(2)}</p>
-                  </CardContent>
-                </Card>
+                <Link href={`/products/${product.id}`} className="group block">
+                  <Card className="overflow-hidden group h-full flex flex-col shadow-sm hover:shadow-lg transition-shadow duration-300 border-border/50 bg-card">
+                    <div className="aspect-[3/4] relative overflow-hidden">
+                      <Image
+                        src={product.imageUrl}
+                        alt={product.description}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        data-ai-hint={product.imageHint}
+                      />
+                    </div>
+                    <CardContent className="p-4 flex-1 flex flex-col">
+                      <h3 className="font-headline text-lg font-semibold flex-1 leading-tight">{product.description}</h3>
+                      <p className="text-sm text-muted-foreground">{product.category}</p>
+                      <p className="mt-2 font-semibold">${product.price.toFixed(2)}</p>
+                    </CardContent>
+                  </Card>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
@@ -145,5 +147,3 @@ export default function Home() {
     </div>
   );
 }
-
-    

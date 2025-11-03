@@ -8,7 +8,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const ProductCard = ({ product }: { product: ImagePlaceholder }) => {
   return (
-    <Link href="#" className="group block">
+    <Link href={`/products/${product.id}`} className="group block">
       <Card className="overflow-hidden border-none shadow-none rounded-none bg-transparent h-full flex flex-col">
         <div className="aspect-[3/4] relative overflow-hidden">
           <Image
