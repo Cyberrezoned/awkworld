@@ -95,7 +95,7 @@ export default function FloatingNav() {
           variants={orbVariants}
           animate={isOpen ? 'open' : 'closed'}
           onClick={() => setIsOpen(!isOpen)}
-          className="w-20 h-20 rounded-full bg-accent text-accent-foreground flex items-center justify-center shadow-2xl drop-shadow-glow-violet focus:outline-none focus:ring-4 focus:ring-primary/50 relative z-10"
+          className="w-20 h-20 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-2xl focus:outline-none focus:ring-4 focus:ring-primary/50 relative z-10"
           aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
         >
           <AnimatePresence mode="wait">
@@ -106,7 +106,7 @@ export default function FloatingNav() {
               exit={{ opacity: 0, scale: 0.5, rotate: 90 }}
               transition={{ duration: 0.2 }}
             >
-              {isOpen ? <X className="w-8 h-8" /> : <div className="w-8 h-8 rounded-full border-2 border-accent-foreground animate-pulse" />}
+              {isOpen ? <X className="w-8 h-8" /> : <div className="w-8 h-8 rounded-full border-2 border-primary-foreground animate-pulse" />}
             </motion.div>
           </AnimatePresence>
         </motion.button>

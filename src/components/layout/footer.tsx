@@ -10,7 +10,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border/40 py-12">
+    <footer className="border-t border-border/40 py-12 bg-background">
       <div className="container flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex flex-col items-center md:items-start gap-4">
            <Link href="/" className="flex items-center gap-2">
@@ -27,8 +27,8 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             {socialLinks.map((link) => (
               <Link key={link.name} href={link.href} aria-label={link.name}
-                className="text-muted-foreground transition-colors hover:text-primary hover:drop-shadow-glow-gold">
-                <link.icon className="h-6 w-6" />
+                className="text-muted-foreground transition-colors hover:text-primary">
+                <link.icon className="h-5 w-5" />
               </Link>
             ))}
           </div>
