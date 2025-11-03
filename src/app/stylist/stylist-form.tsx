@@ -39,7 +39,7 @@ export default function StylistForm() {
     setSuggestion(null);
     setError(null);
     try {
-      const result = await getOutfitSuggestion(values as OutfitSuggestionInput);
+      const result = await getOutfitSuggestion(values);
       setSuggestion(result.outfitSuggestion);
     } catch (e) {
       setError('Failed to get suggestion. Please try again.');
