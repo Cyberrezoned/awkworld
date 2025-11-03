@@ -46,7 +46,7 @@ export default function ProductsPage() {
 
   const paginatedProducts = PlaceHolderImages.slice(
     (currentPage - 1) * productsPerPage,
-    currentPage * productsPerPage
+    (currentPage - 1) * productsPerPage + productsPerPage
   );
   
   const createPageURL = (pageNumber: number) => {
