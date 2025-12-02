@@ -9,7 +9,7 @@ export default function StudioPage() {
            <Video className="w-16 h-16 mx-auto text-primary" />
           <h1 className="mt-6 font-headline text-4xl md:text-6xl font-bold tracking-tight">AI Product Studio</h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Bring your ideas to life. Generate stunning, animated product mockups from simple descriptions using generative AI.
+            Visualize your fashion ideas. Generate stunning, animated product mockups from simple descriptions using generative AI.
           </p>
         </div>
         <MockupGenerator />

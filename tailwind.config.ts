@@ -94,7 +94,6 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
       dropShadow: {
-        'glow-violet': '0 0 10px hsla(var(--accent), 0.8)',
         'glow-gold': '0 0 10px hsla(var(--primary), 0.7)',
       },
     },

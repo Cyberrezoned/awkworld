@@ -7,8 +7,8 @@ import Footer from '@/components/layout/footer';
 import { AppRouterAnimatePresence } from '@/components/AppRouterAnimatePresence';
 
 export const metadata: Metadata = {
-  title: 'Awkward: Elegance in Motion',
-  description: 'An immersive fashion experience with AI-powered styling and visualization.',
+  title: 'LuxeNaija | Premium Luxury Fashion in Nigeria',
+  description: 'Shop the best of luxury fashion from around the world. Delivered to your doorstep, anywhere in Nigeria.',
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

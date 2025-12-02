@@ -4,11 +4,11 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { Minus, Plus, ShoppingCart, Check, ShieldCheck, View, X, Loader } from 'lucide-react';
+import { Minus, Plus, ShoppingCart, View, Loader, ShieldCheck, Check } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Badge } from '@/components/ui/badge';
@@ -21,19 +21,19 @@ const ThreeDViewModal = ({ open, onOpenChange, product }: { open: boolean, onOpe
                 <DialogHeader>
                     <DialogTitle className="font-headline text-2xl text-primary flex items-center gap-3">
                         <View className="w-6 h-6" />
-                        3D View: {product.description}
+                        360° View: {product.description}
                     </DialogTitle>
                 </DialogHeader>
                 <div className="flex-1 flex flex-col items-center justify-center text-center">
                     <motion.div
-                        animate={{ rotate: 360 }}
+                        animate={{ rotateY: 360 }}
                         transition={{ ease: "linear", duration: 20, repeat: Infinity }}
                     >
-                        <View className="w-32 h-32 text-primary/50" />
+                        <Image src={product.imageUrl} alt={product.description} width={300} height={400} className="rounded-lg" />
                     </motion.div>
-                    <h3 className="text-xl font-semibold mt-8">3D Model Loading...</h3>
+                    <h3 className="text-xl font-semibold mt-8">Interactive 3D Model Coming Soon</h3>
                     <p className="text-muted-foreground mt-2">
-                        This is a placeholder for an interactive 3D model viewer.
+                        This is a placeholder for a full 3D model viewer.
                     </p>
                     <Loader className="w-6 h-6 animate-spin mt-4" />
                 </div>
@@ -57,7 +57,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
   const handleAddToCart = () => {
     setIsAdding(true);
     toast({
-      title: "Added to Cart",
+      title: "Added to Bag",
       description: `${quantity} x ${product.description}`,
       className: 'bg-background border-primary/50',
     });
@@ -77,7 +77,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
           transition={{ duration: 0.5 }}
           className="grid md:grid-cols-2 gap-12 lg:gap-20 items-start"
         >
-          <div className="aspect-[3/4] relative overflow-hidden rounded-lg shadow-2xl">
+          <div className="aspect-[3/4] relative overflow-hidden rounded-md">
             <Image
               src={product.imageUrl}
               alt={product.description}
@@ -87,8 +87,8 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
               priority
               data-ai-hint={product.imageHint}
             />
-             <Badge variant="secondary" className="absolute top-4 left-4 text-sm bg-black/50 text-white border-white/20">
-                NFT Edition
+            <Badge variant="secondary" className="absolute top-4 left-4 text-sm bg-black/50 text-white border-white/20">
+              Ships to all locations in Nigeria
              </Badge>
           </div>
 
@@ -108,16 +108,8 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
             </div>
 
             <Separator className="my-8" />
-            
-            <div className="bg-card/50 p-4 rounded-lg border border-border/50 mb-8">
-                <h3 className="font-semibold text-foreground flex items-center gap-2"><ShieldCheck className="text-primary"/> Digital Twin Guarantee</h3>
-                <p className="text-sm text-muted-foreground mt-2">
-                    Each purchase includes a unique NFT, guaranteeing authenticity and digital ownership of your exclusive fashion item.
-                </p>
-                <Button variant="link" className="px-0 h-auto mt-2 text-primary">Verify on Blockchain</Button>
-            </div>
 
-            <div className="flex items-center gap-4 mb-4">
+            <div className="flex items-center gap-4 mb-8">
               <p className="text-sm font-medium text-foreground">Quantity:</p>
               <div className="flex items-center border border-input rounded-md">
                 <Button variant="ghost" size="icon" className="h-10 w-10" onClick={() => setQuantity(q => Math.max(1, q - 1))}>
@@ -130,8 +122,8 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
               </div>
             </div>
 
-            <div className="flex gap-4 mb-8">
-                 <Button size="lg" className="flex-1 font-headline tracking-wider text-base bg-foreground text-background hover:bg-foreground/90 transition-all hover:scale-105 hover:drop-shadow-glow-gold" onClick={handleAddToCart} disabled={isAdding}>
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                 <Button size="lg" className="flex-1 font-headline tracking-wider text-base bg-foreground text-background hover:bg-foreground/90 transition-all hover:scale-105" onClick={handleAddToCart} disabled={isAdding}>
                     {isAdding ? (
                     <>
                         <Check className="mr-2 h-5 w-5" />
@@ -140,20 +132,19 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                     ) : (
                     <>
                         <ShoppingCart className="mr-2 h-5 w-5" />
-                        Add to Cart
+                        Add to Bag
                     </>
                     )}
                 </Button>
-                 <Button size="lg" variant="outline" className="font-headline tracking-wider text-base transition-all hover:scale-105 hover:border-primary hover:text-primary" onClick={() => setIs3DViewOpen(true)}>
+                 <Button size="lg" variant="outline" className="flex-1 font-headline tracking-wider text-base transition-all hover:scale-105 hover:border-primary hover:text-primary" onClick={() => setIs3DViewOpen(true)}>
                     <View className="mr-2 h-5 w-5" />
-                    3D View
+                    360° View
                 </Button>
             </div>
 
-
             <div className="mt-auto pt-8 text-xs text-muted-foreground space-y-2">
-                <p>Free shipping on all orders.</p>
-                <p>Duties and taxes may apply.</p>
+                <p>Free standard shipping on all orders in Nigeria.</p>
+                <p>Duties and taxes are included.</p>
             </div>
           </div>
         </motion.div>

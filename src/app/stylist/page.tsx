@@ -9,7 +9,7 @@ export default function StylistPage() {
           <Bot className="w-16 h-16 mx-auto text-primary" />
           <h1 className="mt-6 font-headline text-4xl md:text-6xl font-bold tracking-tight">AI Stylist</h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Your personal AI stylist. Get outfit suggestions based on your body type, current weather, and the latest fashion trends.
+            Get personalized, luxury outfit suggestions based on your style, the occasion, and the latest high-fashion trends.
           </p>
         </div>
         <StylistForm />

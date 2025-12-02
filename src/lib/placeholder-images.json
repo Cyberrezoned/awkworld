@@ -2,163 +2,163 @@
   "placeholderImages": [
     {
       "id": "prod_001",
-      "description": "Minimalist White Tee",
-      "category": "Tops",
-      "price": 85,
-      "imageUrl": "https://images.unsplash.com/photo-1581655353564-df123a43e246?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "white t-shirt"
+      "description": "Silk Blend Blouse",
+      "category": "Women's Fashion",
+      "price": 450,
+      "imageUrl": "https://images.unsplash.com/photo-1594625842422-9a67fb797e5d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "white blouse"
     },
     {
       "id": "prod_002",
-      "description": "Classic Denim Jacket",
-      "category": "Outerwear",
-      "price": 275,
-      "imageUrl": "https://images.unsplash.com/photo-1543087902-39d78e350c3a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "denim jacket"
+      "description": "Italian Wool Suit",
+      "category": "Men's Fashion",
+      "price": 1800,
+      "imageUrl": "https://images.unsplash.com/photo-1593032465175-3a38838d49a0?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "man suit"
     },
     {
       "id": "prod_003",
-      "description": "Tailored Black Trousers",
-      "category": "Trousers",
-      "price": 220,
-      "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "black trousers"
+      "description": "Leather Shoulder Bag",
+      "category": "Accessories",
+      "price": 950,
+      "imageUrl": "https://images.unsplash.com/photo-1590737142436-03f99a437f81?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "leather bag"
     },
     {
       "id": "prod_004",
-      "description": "Leather Platform Boots",
-      "category": "Footwear",
-      "price": 450,
-      "imageUrl": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "black boots"
+      "description": "Cashmere Knit Sweater",
+      "category": "Women's Fashion",
+      "price": 620,
+      "imageUrl": "https://images.unsplash.com/photo-1588147321289-21ab4c1b92c4?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "beige sweater"
     },
     {
       "id": "prod_005",
-      "description": "Oversized Wool Coat",
-      "category": "Outerwear",
-      "price": 650,
-      "imageUrl": "https://images.unsplash.com/photo-1521577352947-2c45e02b742e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "woman coat"
+      "description": "Designer Leather Loafers",
+      "category": "Men's Fashion",
+      "price": 750,
+      "imageUrl": "https://images.unsplash.com/photo-1617606002779-51d866bdd1d1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "leather shoes"
     },
     {
       "id": "prod_006",
-      "description": "Silver Chain Necklace",
+      "description": "Gold Chronograph Watch",
       "category": "Accessories",
-      "price": 180,
-      "imageUrl": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "silver necklace"
+      "price": 2500,
+      "imageUrl": "https://images.unsplash.com/photo-1610624921694-db05ddec899b?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "gold watch"
     },
     {
       "id": "prod_007",
-      "description": "Silk Slip Dress",
-      "category": "Dresses",
-      "price": 340,
-      "imageUrl": "https://images.unsplash.com/photo-1595138130198-3d4722519757?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "silk dress"
+      "description": "Structured Trench Coat",
+      "category": "Women's Fashion",
+      "price": 1350,
+      "imageUrl": "https://images.unsplash.com/photo-1582142407894-a2c71a5f6b31?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "trench coat"
     },
     {
       "id": "prod_008",
-      "description": "Vintage Style Sunglasses",
-      "category": "Accessories",
-      "price": 160,
-      "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "sunglasses fashion"
+      "description": "Linen Button-Down Shirt",
+      "category": "Men's Fashion",
+      "price": 320,
+      "imageUrl": "https://images.unsplash.com/photo-1603217041432-6180816a13c2?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "man shirt"
     },
     {
       "id": "prod_009",
-      "description": "Ribbed Knit Beanie",
-      "category": "Accessories",
-      "price": 75,
-      "imageUrl": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "black beanie"
+      "description": "Pleated Wide-Leg Trousers",
+      "category": "Women's Fashion",
+      "price": 580,
+      "imageUrl": "https://images.unsplash.com/photo-1598403031682-9477a7f6f598?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "white trousers"
     },
     {
       "id": "prod_010",
-      "description": "Graphic Print Hoodie",
-      "category": "Tops",
-      "price": 190,
-      "imageUrl": "https://images.unsplash.com/photo-1556157679-0a63991da983?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "man hoodie"
+      "description": "Suede Chelsea Boots",
+      "category": "Men's Fashion",
+      "price": 890,
+      "imageUrl": "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "suede boots"
     },
     {
       "id": "prod_011",
-      "description": "Leather Biker Jacket",
-      "category": "Outerwear",
-      "price": 720,
-      "imageUrl": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "leather jacket"
+      "description": "Minimalist Gold Hoops",
+      "category": "Accessories",
+      "price": 350,
+      "imageUrl": "https://images.unsplash.com/photo-1615655416383-2f883b271344?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "gold earrings"
     },
     {
       "id": "prod_012",
-      "description": "Chunky Sole Sneakers",
-      "category": "Footwear",
-      "price": 320,
-      "imageUrl": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "colorful sneakers"
+      "description": "Designer Leather Belt",
+      "category": "Accessories",
+      "price": 480,
+      "imageUrl": "https://images.unsplash.com/photo-1584956385119-33cb27377c44?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "leather belt"
     },
     {
       "id": "prod_013",
-      "description": "Cargo Style Trousers",
-      "category": "Trousers",
-      "price": 250,
-      "imageUrl": "https://images.unsplash.com/photo-1695373887498-5c4043a290f9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "cargo pants"
+      "description": "Tailored Crepe Dress",
+      "category": "Women's Fashion",
+      "price": 980,
+      "imageUrl": "https://images.unsplash.com/photo-1579975794441-3b7a8b41b91c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "black dress"
     },
     {
       "id": "prod_014",
-      "description": "Canvas Tote Bag",
-      "category": "Bags",
-      "price": 95,
-      "imageUrl": "https://images.unsplash.com/photo-1563140411-13725b736952?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "tote bag"
+      "description": "Slim-Fit Chinos",
+      "category": "Men's Fashion",
+      "price": 410,
+      "imageUrl": "https://images.unsplash.com/photo-1602293589923-7a7d5718a33a?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "beige pants"
     },
     {
       "id": "prod_015",
-      "description": "Cropped Puffer Vest",
-      "category": "Outerwear",
-      "price": 210,
-      "imageUrl": "https://images.unsplash.com/photo-1610461888750-10f27341d31d?q=80&w=1898&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "puffer vest"
+      "description": "Aviator Sunglasses",
+      "category": "Accessories",
+      "price": 550,
+      "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "sunglasses model"
     },
     {
       "id": "prod_016",
-      "description": "Nylon Crossbody Bag",
-      "category": "Bags",
-      "price": 140,
-      "imageUrl": "https://images.unsplash.com/photo-1629003923148-5ab797b3d957?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "crossbody bag"
+      "description": "Silk Evening Scarf",
+      "category": "Accessories",
+      "price": 280,
+      "imageUrl": "https://images.unsplash.com/photo-1549497539-7878844445c7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "silk scarf"
     },
     {
       "id": "prod_017",
-      "description": "Retro High-Top Sneakers",
-      "category": "Footwear",
-      "price": 280,
-      "imageUrl": "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "white sneakers"
+      "description": "High-Heel Sandals",
+      "category": "Women's Fashion",
+      "price": 720,
+      "imageUrl": "https://images.unsplash.com/photo-1590099033615-77725a2b13b7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "heels shoes"
     },
     {
       "id": "prod_018",
-      "description": "Checkered Flannel Shirt",
-      "category": "Tops",
-      "price": 155,
-      "imageUrl": "https://images.unsplash.com/photo-1601951037345-a832d2b86851?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "flannel shirt"
+      "description": "Merino Wool Polo Shirt",
+      "category": "Men's Fashion",
+      "price": 380,
+      "imageUrl": "https://images.unsplash.com/photo-1588731216973-c649de132785?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "man polo"
     },
     {
       "id": "prod_019",
-      "description": "Classic Aviator Sunglasses",
-      "category": "Accessories",
-      "price": 195,
-      "imageUrl": "https://images.unsplash.com/photo-1577803645773-f144005fb2d6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "aviator sunglasses"
+      "description": "Canvas Weekend Bag",
+      "category": "Bags",
+      "price": 680,
+      "imageUrl": "https://images.unsplash.com/photo-1584917865225-ea57c9103310?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "travel bag"
     },
     {
       "id": "prod_020",
-      "description": "Linen Button-Up Shirt",
-      "category": "Tops",
-      "price": 175,
-      "imageUrl": "https://images.unsplash.com/photo-1621335829175-95f43634453d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "linen shirt"
+      "description": "Leather Biker Jacket",
+      "category": "Men's Fashion",
+      "price": 1950,
+      "imageUrl": "https://images.unsplash.com/photo-1551028373-c64de0a4b373?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "leather jacket"
     }
   ]
 }
