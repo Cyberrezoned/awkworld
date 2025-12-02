@@ -4,7 +4,7 @@
       "id": "prod_001",
       "description": "Geo-Print Silk Blouse",
       "category": "AWKWorld Women",
-      "price": 450,
+      "price": 250000,
       "imageUrl": "https://images.unsplash.com/photo-1552838686-23e2cffb044d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "african print blouse"
     },
@@ -12,7 +12,7 @@
       "id": "prod_002",
       "description": "Charcoal Linen Suit",
       "category": "AWKWorld Men",
-      "price": 1800,
+      "price": 950000,
       "imageUrl": "https://images.unsplash.com/photo-1617137968423-31f3b7fa98c3?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "man linen suit"
     },
@@ -20,7 +20,7 @@
       "id": "prod_003",
       "description": "Kinetic Leather Crossbody",
       "category": "Bags, Shoes & Luxury Accessories",
-      "price": 950,
+      "price": 550000,
       "imageUrl": "https://images.unsplash.com/photo-1613482181206-a09cebb1e4c7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "futuristic leather bag"
     },
@@ -28,7 +28,7 @@
       "id": "prod_004",
       "description": "Ivory Knit Sweater",
       "category": "AWKWorld Women",
-      "price": 620,
+      "price": 320000,
       "imageUrl": "https://images.unsplash.com/photo-1616238395568-2c9635003504?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "white sweater model"
     },
@@ -36,7 +36,7 @@
       "id": "prod_005",
       "description": "Neo-Loafer in Black",
       "category": "Bags, Shoes & Luxury Accessories",
-      "price": 750,
+      "price": 420000,
       "imageUrl": "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "black loafers"
     },
@@ -44,7 +44,7 @@
       "id": "prod_006",
       "description": "AWK-Chronograph Watch",
       "category": "Bags, Shoes & Luxury Accessories",
-      "price": 2500,
+      "price": 1800000,
       "imageUrl": "https://images.unsplash.com/photo-1620625515032-6ed2a143b83b?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "black gold watch"
     },
@@ -52,7 +52,7 @@
       "id": "prod_007",
       "description": "Tech-Trench Coat",
       "category": "AWKWorld Women",
-      "price": 1350,
+      "price": 750000,
       "imageUrl": "https://images.unsplash.com/photo-1574201635302-388dd78a4664?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "futuristic trench coat"
     },
@@ -60,7 +60,7 @@
       "id": "prod_008",
       "description": "Monochrome Utility Shirt",
       "category": "AWKWorld Men",
-      "price": 320,
+      "price": 180000,
       "imageUrl": "https://images.unsplash.com/photo-1596489379201-d308a1a3a38a?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "man black shirt"
     },
@@ -68,7 +68,7 @@
       "id": "prod_009",
       "description": "Deconstructed Trousers",
       "category": "AWKWorld Women",
-      "price": 580,
+      "price": 290000,
       "imageUrl": "https://images.unsplash.com/photo-1594625842422-9a67fb797e5d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "white trousers"
     },
@@ -76,7 +76,7 @@
       "id": "prod_010",
       "description": "AWK-1 High-Top Sneakers",
       "category": "AWKWorld Streetwear",
-      "price": 890,
+      "price": 480000,
       "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d244837524?q=80&w=2828&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "futuristic sneakers"
     },
@@ -84,7 +84,7 @@
       "id": "prod_011",
       "description": "Kinetic Gold Hoops",
       "category": "Bags, Shoes & Luxury Accessories",
-      "price": 350,
+      "price": 195000,
       "imageUrl": "https://images.unsplash.com/photo-1615655416383-2f883b271344?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "gold earrings"
     },
@@ -92,7 +92,7 @@
       "id": "prod_012",
       "description": "Vector Leather Belt",
       "category": "Bags, Shoes & Luxury Accessories",
-      "price": 480,
+      "price": 240000,
       "imageUrl": "https://images.unsplash.com/photo-1619894982144-8a7197b37492?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "black leather belt"
     },
@@ -100,7 +100,7 @@
       "id": "prod_013",
       "description": "Asymmetric Crepe Dress",
       "category": "AWKWorld Women",
-      "price": 980,
+      "price": 520000,
       "imageUrl": "https://images.unsplash.com/photo-1620012818693-8a39c905b184?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "futuristic black dress"
     },
@@ -108,7 +108,7 @@
       "id": "prod_014",
       "description": "Graphite Utility Trousers",
       "category": "AWKWorld Men",
-      "price": 410,
+      "price": 220000,
       "imageUrl": "https://images.unsplash.com/photo-1597851965903-2f2299d42512?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "man black pants"
     },
@@ -116,7 +116,7 @@
       "id": "prod_015",
       "description": "Shield Sunglasses",
       "category": "Bags, Shoes & Luxury Accessories",
-      "price": 550,
+      "price": 310000,
       "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "futuristic sunglasses"
     },
@@ -124,7 +124,7 @@
       "id": "prod_016",
       "description": "Oversized Graphic Hoodie",
       "category": "AWKWorld Streetwear",
-      "price": 280,
+      "price": 150000,
       "imageUrl": "https://images.unsplash.com/photo-1587293852885-b1e16caced03?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "streetwear hoodie"
     },
@@ -132,7 +132,7 @@
       "id": "prod_017",
       "description": "Sculptural High-Heels",
       "category": "Bags, Shoes & Luxury Accessories",
-      "price": 720,
+      "price": 390000,
       "imageUrl": "https://images.unsplash.com/photo-1590099033615-77725a2b13b7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "gold heels"
     },
@@ -140,7 +140,7 @@
       "id": "prod_018",
       "description": "Carbon-Fibre Polo Shirt",
       "category": "AWKWorld Men",
-      "price": 380,
+      "price": 210000,
       "imageUrl": "https://images.unsplash.com/photo-1576995853123-5a1d3b4b53e3?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "man black polo"
     },
@@ -148,7 +148,7 @@
       "id": "prod_019",
       "description": "AWK-Tote Bag",
       "category": "Bags, Shoes & Luxury Accessories",
-      "price": 680,
+      "price": 350000,
       "imageUrl": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "black tote bag"
     },
@@ -156,7 +156,7 @@
       "id": "prod_020",
       "description": "Moto-Synth Jacket",
       "category": "Global Designer Collabs",
-      "price": 1950,
+      "price": 1250000,
       "imageUrl": "https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?q=80&w=2798&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "moto jacket"
     }

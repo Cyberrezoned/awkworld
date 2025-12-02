@@ -47,7 +47,7 @@ const ProductCard = ({ product }: { product: any }) => {
             <h3 className="font-headline text-lg font-medium leading-tight text-foreground">
               {product.description}
             </h3>
-            <p className="mt-2 text-base text-primary">${product.price.toFixed(2)}</p>
+            <p className="mt-2 text-base text-primary">₦{product.price.toLocaleString()}</p>
           </CardContent>
         </Card>
       </motion.div>
@@ -96,7 +96,7 @@ export default function Home() {
           variants={fadeIn}
           className="mt-8 z-10 flex flex-wrap justify-center gap-4"
         >
-          <Button asChild size="lg" className="font-headline text-base tracking-wider transition-all hover:scale-105 bg-primary text-primary-foreground hover:bg-primary/90">
+          <Button asChild size="lg" className="font-headline text-base tracking-wider transition-all hover:scale-105 bg-primary text-primary-foreground hover:bg-primary/90 hover:drop-shadow-glow-gold">
             <Link href="/products">Explore AWKWorld</Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="font-headline text-base tracking-wider transition-all hover:scale-105 border-white text-white hover:bg-white/10">

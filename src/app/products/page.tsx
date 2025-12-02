@@ -34,7 +34,7 @@ const ProductCard = ({ product }: { product: ImagePlaceholder }) => {
             <h3 className="font-headline text-lg font-medium leading-tight text-foreground">
               {product.description}
             </h3>
-            <p className="mt-2 text-base text-primary">${product.price.toFixed(2)}</p>
+            <p className="mt-2 text-base text-primary">₦{product.price.toLocaleString()}</p>
           </CardContent>
         </Card>
       </motion.div>

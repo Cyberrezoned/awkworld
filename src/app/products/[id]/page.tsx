@@ -28,14 +28,19 @@ const ThreeDViewModal = ({ open, onOpenChange, product }: { open: boolean, onOpe
                     <motion.div
                         animate={{ rotateY: 360 }}
                         transition={{ ease: "linear", duration: 20, repeat: Infinity }}
+                        style={{ perspective: '1000px' }}
                     >
-                        <Image src={product.imageUrl} alt={product.description} width={300} height={400} className="rounded-lg" />
+                        <motion.div
+                            style={{transformStyle: 'preserve-3d', rotateY: 0}}
+                        >
+                            <Image src={product.imageUrl} alt={product.description} width={300} height={400} className="rounded-lg shadow-2xl shadow-primary/20" />
+                        </motion.div>
                     </motion.div>
                     <h3 className="text-xl font-semibold mt-8">Interactive 3D Model Coming Soon</h3>
                     <p className="text-muted-foreground mt-2">
                         This is a placeholder for a full 3D model viewer.
                     </p>
-                    <Loader className="w-6 h-6 animate-spin mt-4" />
+                    <Loader className="w-6 h-6 animate-spin mt-4 text-primary" />
                 </div>
             </DialogContent>
         </Dialog>
@@ -96,7 +101,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
             <div>
               <p className="text-sm uppercase tracking-widest text-muted-foreground">{product.category}</p>
               <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight my-2">{product.description}</h1>
-              <p className="text-3xl font-semibold mb-6 text-primary">${product.price.toFixed(2)}</p>
+              <p className="text-3xl font-semibold mb-6 text-primary">₦{product.price.toLocaleString()}</p>
             </div>
             
             <div className="space-y-4 text-muted-foreground">
@@ -122,7 +127,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                 <Button size="lg" className="flex-1 font-headline tracking-wider text-base bg-foreground text-background hover:bg-foreground/90 transition-all hover:scale-105" onClick={handleAddToCart} disabled={isAdding}>
+                 <Button size="lg" className="flex-1 font-headline tracking-wider text-base bg-foreground text-background hover:bg-foreground/90 transition-all hover:scale-105 hover:drop-shadow-glow-gold" onClick={handleAddToCart} disabled={isAdding}>
                     {isAdding ? (
                     <>
                         <Check className="mr-2 h-5 w-5" />
@@ -135,7 +140,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                     </>
                     )}
                 </Button>
-                 <Button size="lg" variant="outline" className="flex-1 font-headline tracking-wider text-base transition-all hover:scale-105 hover:border-primary hover:text-primary" onClick={() => setIs3DViewOpen(true)}>
+                 <Button size="lg" variant="outline" className="flex-1 font-headline tracking-wider text-base transition-all hover:scale-105 hover:border-primary hover:text-primary hover:drop-shadow-glow-gold" onClick={() => setIs3DViewOpen(true)}>
                     <View className="mr-2 h-5 w-5" />
                     360° View
                 </Button>
