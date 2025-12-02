@@ -14,13 +14,10 @@ export default function Footer() {
       <div className="container flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex flex-col items-center md:items-start gap-4">
            <Link href="/" className="flex items-center gap-2">
-            <Logo className="h-6 w-auto text-primary" />
-            <span className="font-headline text-xl font-bold tracking-tighter text-foreground">
-              AWKWARD
-            </span>
+            <Logo className="h-6 w-auto text-foreground" />
           </Link>
           <p className="text-muted-foreground text-sm max-w-xs text-center md:text-left">
-            Elegance in Motion. The future of fashion, today.
+            The future of fashion, today.
           </p>
         </div>
         <div className="flex flex-col items-center md:items-end gap-4">
