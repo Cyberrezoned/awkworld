@@ -57,7 +57,7 @@ const ProductCard = ({ product }: { product: any }) => {
 
 
 export default function Home() {
-  const featuredProducts = PlaceHolderImages.filter(p => p.category === "Women's Fashion" || p.category === "Men's Fashion").slice(0, 4);
+  const featuredProducts = PlaceHolderImages.filter(p => p.category === "AWKWorld Women" || p.category === "AWKWorld Men").slice(0, 4);
 
   return (
     <div className="flex flex-col items-center text-foreground bg-background">
@@ -70,37 +70,37 @@ export default function Home() {
       >
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1509319117193-57bab727e09d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Luxury fashion model"
+            src="https://images.unsplash.com/photo-1545291730-faff8ca1d4b0?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="AWKWorld fashion model"
             fill
             className="object-cover"
             priority
-            data-ai-hint="luxury fashion editorial"
+            data-ai-hint="afro futuristic fashion"
           />
-           <div className="absolute inset-0 bg-black/50 z-5"></div>
+           <div className="absolute inset-0 bg-black/60 z-5"></div>
         </div>
 
         <motion.h1
           variants={fadeIn}
-          className="font-headline text-5xl md:text-7xl font-bold z-10 tracking-tight text-white drop-shadow-md"
+          className="font-headline text-5xl md:text-8xl font-bold z-10 tracking-tighter text-white drop-shadow-md"
         >
-          The Height of Luxury Fashion
+          AWKWorld
         </motion.h1>
         <motion.p
           variants={fadeIn}
-          className="mt-4 max-w-2xl text-lg md:text-xl text-white/90 z-10"
+          className="mt-4 max-w-3xl text-lg md:text-2xl text-white/90 z-10 font-body"
         >
-          Discover curated collections from the world's most renowned designers. Delivered to you, anywhere in Nigeria.
+          Where Global Fashion Meets African Excellence.
         </motion.p>
         <motion.div
           variants={fadeIn}
           className="mt-8 z-10 flex flex-wrap justify-center gap-4"
         >
-          <Button asChild size="lg" className="font-headline text-base tracking-wider transition-all hover:scale-105 bg-white text-black hover:bg-gray-200">
-            <Link href="/products?category=women">Shop Women</Link>
+          <Button asChild size="lg" className="font-headline text-base tracking-wider transition-all hover:scale-105 bg-primary text-primary-foreground hover:bg-primary/90">
+            <Link href="/products">Explore AWKWorld</Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="font-headline text-base tracking-wider transition-all hover:scale-105 border-white text-white hover:bg-white/10">
-            <Link href="/products?category=men">Shop Men</Link>
+            <Link href="/products?category=streetwear">Premium Streetwear</Link>
           </Button>
         </motion.div>
       </motion.section>
@@ -144,9 +144,9 @@ export default function Home() {
           </motion.div>
           <motion.div initial={{opacity: 0, x: 50}} whileInView={{opacity: 1, x: 0}} viewport={{once: true, amount: 0.5}} className="text-center md:text-left">
             <Truck className="h-12 w-12 text-primary mx-auto md:mx-0"/>
-            <h2 className="font-headline text-4xl md:text-5xl font-medium tracking-tight mt-4">Delivering Luxury, Nationwide</h2>
+            <h2 className="font-headline text-4xl md:text-5xl font-medium tracking-tight mt-4">Delivering Style, Nationwide</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              From Lagos to Kano, Abuja to Port Harcourt, and everywhere in between. LuxeNaija delivers to every state and local government area in Nigeria. Your finest fashion is now within reach.
+              From Lagos to Kano, Abuja to Port Harcourt, and everywhere in between. AWKWorld delivers to every state and local government area in Nigeria. Your finest fashion is now within reach.
             </p>
             <Button asChild size="lg" variant="link" className="font-headline text-base tracking-wider mt-4 px-0">
                 <Link href="/delivery">Learn More About Our Delivery <ArrowRight className="ml-2" /></Link>

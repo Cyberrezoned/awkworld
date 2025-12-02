@@ -17,7 +17,7 @@ export default function Footer() {
             <Logo className="text-foreground" />
           </Link>
           <p className="text-muted-foreground text-sm max-w-xs text-center md:text-left">
-            The best of global luxury, delivered nationwide in Nigeria.
+            A global fashion movement that merges Afro-modern aesthetics with international luxury style.
           </p>
         </div>
         <div className="flex flex-col items-center md:items-end gap-4">
@@ -30,7 +30,7 @@ export default function Footer() {
             ))}
           </div>
            <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} LuxeNaija Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} AWKWorld Inc. All rights reserved.
           </p>
         </div>
       </div>

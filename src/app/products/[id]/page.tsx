@@ -101,9 +101,8 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
             
             <div className="space-y-4 text-muted-foreground">
               <p>
-                This is a placeholder description for the {product.description}. 
-                Crafted with the finest materials and an eye for modern aesthetics, this piece is a testament to timeless style and exceptional quality. 
-                Its versatile design allows it to be a staple in any wardrobe, transcending seasons and trends.
+                This is a placeholder for the AWKWorld styling notes. This {product.description} is a statement piece that blends global trends with Afro-modernist design. 
+                Crafted with the finest materials and an eye for artistic detail, this piece is a testament to timeless style and exceptional quality. 
               </p>
             </div>
 

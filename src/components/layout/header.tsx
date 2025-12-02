@@ -8,9 +8,10 @@ import Logo from '@/components/icons/logo';
 
 const navItems = [
   { href: '/products', label: 'New Arrivals' },
-  { href: '/products?category=women', label: "Women's" },
-  { href: '/products?category=men', label: "Men's" },
-  { href: '/products?category=accessories', label: 'Accessories' },
+  { href: '/products?category=women', label: "AWKWorld Women" },
+  { href: '/products?category=men', label: "AWKWorld Men" },
+  { href: '/products?category=streetwear', label: 'Streetwear' },
+  { href: '/products?category=collabs', label: 'Global Collabs' },
   { href: '/delivery', label: 'Nationwide Delivery' },
 ];
 

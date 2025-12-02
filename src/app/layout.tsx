@@ -7,8 +7,8 @@ import Footer from '@/components/layout/footer';
 import { AppRouterAnimatePresence } from '@/components/AppRouterAnimatePresence';
 
 export const metadata: Metadata = {
-  title: 'LuxeNaija | Premium Luxury Fashion in Nigeria',
-  description: 'Shop the best of luxury fashion from around the world. Delivered to your doorstep, anywhere in Nigeria.',
+  title: 'AWKWorld | Global Fashion, African Excellence',
+  description: 'A global fashion movement that merges Afro-modern aesthetics with international luxury style. Delivered to you, anywhere in Nigeria.',
 };
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className={cn('font-body antialiased min-h-screen flex flex-col bg-background')}>

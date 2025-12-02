@@ -38,9 +38,9 @@ export default function DeliveryPage() {
           className="text-center mb-16"
         >
           <Truck className="w-20 h-20 mx-auto text-primary" />
-          <h1 className="mt-6 font-headline text-5xl md:text-7xl font-bold tracking-tight">Nationwide Delivery</h1>
+          <h1 className="mt-6 font-headline text-5xl md:text-7xl font-bold tracking-tight">AWKWorld Delivery Across Nigeria</h1>
           <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-            LuxeNaija is proud to offer premium, reliable, and secure delivery to every corner of Nigeria. Your luxury is guaranteed, no matter your location.
+            AWKWorld is proud to offer premium, reliable, and secure delivery to every corner of Nigeria. Your style is guaranteed, no matter your location.
           </p>
         </motion.div>
 
@@ -51,7 +51,7 @@ export default function DeliveryPage() {
           viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer}
         >
-          <h2 className="font-headline text-3xl md:text-4xl text-center font-medium mb-10">Our Coverage</h2>
+          <h2 className="font-headline text-3xl md:text-4xl text-center font-medium mb-10">Our Unrivaled Coverage</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
             {statesOfNigeria.map((state, index) => (
               <motion.div
@@ -75,16 +75,16 @@ export default function DeliveryPage() {
             <div className="grid md:grid-cols-2 gap-8 text-center">
                 <motion.div initial={{opacity: 0, scale: 0.9}} whileInView={{opacity: 1, scale: 1}} viewport={{once: true, amount: 0.5}} className="p-8 border border-border rounded-lg bg-background">
                     <PackageCheck className="h-10 w-10 text-primary mx-auto mb-4" />
-                    <h3 className="font-headline text-2xl font-medium">Standard & Express Options</h3>
+                    <h3 className="font-headline text-2xl font-medium">Standard, Express & Next-Day</h3>
                     <p className="text-muted-foreground mt-2">
-                        Choose what works for you. Get your order in 2-5 business days with Standard Delivery, or within 24-48 hours in major cities with Express Delivery.
+                        Choose what works for you. Get your order in 2-5 business days with Standard, within 48 hours with Express, or Next-Day in Lagos & Abuja.
                     </p>
                 </motion.div>
                 <motion.div initial={{opacity: 0, scale: 0.9}} whileInView={{opacity: 1, scale: 1}} viewport={{once: true, amount: 0.5}} className="p-8 border border-border rounded-lg bg-background">
                     <PackageCheck className="h-10 w-10 text-primary mx-auto mb-4" />
                     <h3 className="font-headline text-2xl font-medium">Secure & Insured</h3>
                     <p className="text-muted-foreground mt-2">
-                        Every package is fully insured from our door to yours. We partner with premium logistics providers to ensure your luxury items arrive in perfect condition.
+                        Every package is fully insured from our door to yours. We partner with premium logistics providers to ensure your items arrive in perfect condition.
                     </p>
                 </motion.div>
             </div>

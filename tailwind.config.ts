@@ -11,7 +11,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['Inter', 'sans-serif'],
-        headline: ['Playfair Display', 'serif'],
+        headline: ['Space Grotesk', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
@@ -95,6 +95,7 @@ export default {
       },
       dropShadow: {
         'glow-gold': '0 0 10px hsla(var(--primary), 0.7)',
+        'glow-violet': '0 0 10px hsla(260, 100%, 70%, 0.7)',
       },
     },
   },

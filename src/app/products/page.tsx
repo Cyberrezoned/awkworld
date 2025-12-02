@@ -52,7 +52,7 @@ export default function ProductsPage() {
   const category = searchParams.get('category');
 
   const filteredProducts = category 
-    ? PlaceHolderImages.filter(p => p.category.toLowerCase().includes(category))
+    ? PlaceHolderImages.filter(p => p.category.toLowerCase().replace(/, /g, '-').replace(/ /g, '-').includes(category))
     : PlaceHolderImages;
 
   const totalProducts = filteredProducts.length;
@@ -71,9 +71,9 @@ export default function ProductsPage() {
     <div className="bg-background">
         <div className="container py-16 md:py-24">
             <div className="text-center mb-16">
-                <h1 className="font-headline text-5xl md:text-7xl font-bold tracking-tight">The Collection</h1>
+                <h1 className="font-headline text-5xl md:text-7xl font-bold tracking-tight">The AWKWorld Collection</h1>
                 <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-                  An exclusive curation of ready-to-wear, accessories, and fine jewelry. Each piece a statement.
+                  An exclusive curation of ready-to-wear, streetwear, and accessories. Each piece a statement.
                 </p>
             </div>
 
