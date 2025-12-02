@@ -100,7 +100,7 @@ export default function Home() {
             <Link href="/products">Explore AWKWorld</Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="font-headline text-base tracking-wider transition-all hover:scale-105 border-white text-white hover:bg-white/10">
-            <Link href="/products?category=streetwear">Premium Streetwear</Link>
+            <Link href="/products?category=awkworld-streetwear">Premium Streetwear</Link>
           </Button>
         </motion.div>
       </motion.section>

@@ -10,19 +10,22 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { Minus, Plus, ShoppingCart, View, Loader, ShieldCheck, Check } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Badge } from '@/components/ui/badge';
 
 
 const ThreeDViewModal = ({ open, onOpenChange, product }: { open: boolean, onOpenChange: (open: boolean) => void, product: any }) => {
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
-            <DialogContent className="max-w-3xl h-[80vh] bg-black/80 backdrop-blur-xl border-primary/30 text-white flex flex-col">
+            <DialogContent className="max-w-3xl h-[80vh] bg-black/80 backdrop-blur-xl border-primary/30 text-white flex flex-col data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=closed]:animate-out data-[state=closed]:fade-out-0">
                 <DialogHeader>
                     <DialogTitle className="font-headline text-2xl text-primary flex items-center gap-3">
                         <View className="w-6 h-6" />
                         360° View: {product.description}
                     </DialogTitle>
+                    <DialogDescription className="text-muted-foreground">
+                        This is a placeholder for an interactive 3D model viewer.
+                    </DialogDescription>
                 </DialogHeader>
                 <div className="flex-1 flex flex-col items-center justify-center text-center">
                     <motion.div
@@ -37,9 +40,6 @@ const ThreeDViewModal = ({ open, onOpenChange, product }: { open: boolean, onOpe
                         </motion.div>
                     </motion.div>
                     <h3 className="text-xl font-semibold mt-8">Interactive 3D Model Coming Soon</h3>
-                    <p className="text-muted-foreground mt-2">
-                        This is a placeholder for a full 3D model viewer.
-                    </p>
                     <Loader className="w-6 h-6 animate-spin mt-4 text-primary" />
                 </div>
             </DialogContent>

@@ -5,15 +5,12 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import Logo from '@/components/icons/logo';
-import { Bot, Clapperboard } from 'lucide-react';
 
 const navItems = [
   { href: '/products', label: 'New Arrivals' },
-  { href: '/products?category=women', label: "AWKWorld Women" },
-  { href: '/products?category=men', label: "AWKWorld Men" },
-  { href: '/products?category=streetwear', label: 'Streetwear' },
-  { href: '/stylist', label: 'AI Stylist', icon: Bot },
-  { href: '/studio', label: 'AI Studio', icon: Clapperboard },
+  { href: '/products?category=awkworld-women', label: "AWKWorld Women" },
+  { href: '/products?category=awkworld-men', label: "AWKWorld Men" },
+  { href: '/products?category=awkworld-streetwear', label: 'Streetwear' },
   { href: '/delivery', label: 'Nationwide Delivery' },
 ];
 
@@ -39,7 +36,6 @@ export default function Header() {
                   pathname === item.href && 'text-foreground'
                 )}
               >
-                {item.icon && <item.icon className="h-4 w-4" />}
                 {item.label}
               </Link>
             ))}

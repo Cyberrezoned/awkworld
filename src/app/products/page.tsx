@@ -52,7 +52,7 @@ export default function ProductsPage() {
   const category = searchParams.get('category');
 
   const filteredProducts = category 
-    ? PlaceHolderImages.filter(p => p.category.toLowerCase().replace(/, /g, '-').replace(/ /g, '-').includes(category))
+    ? PlaceHolderImages.filter(p => p.category.toLowerCase().replace(/ /g, '-').replace(/,-/g, '-') === category)
     : PlaceHolderImages;
 
   const totalProducts = filteredProducts.length;
