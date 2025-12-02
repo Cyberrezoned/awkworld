@@ -4,7 +4,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ShoppingCart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
@@ -24,6 +24,65 @@ const staggerContainer = {
   },
 };
 
+const ProductCard = ({ product }: { product: any }) => {
+  return (
+    <Link href={`/products/${product.id}`} className="group block">
+      <motion.div
+        whileHover={{ y: -8 }}
+        transition={{ duration: 0.3 }}
+        className="h-full"
+      >
+        <Card className="overflow-hidden group h-full flex flex-col shadow-lg bg-card/80 backdrop-blur-sm border-white/10 transition-all duration-300 hover:border-primary/60 hover:shadow-primary/20">
+          <motion.div
+            className="aspect-[3/4] relative overflow-hidden"
+            style={{ transformStyle: 'preserve-3d' }}
+          >
+            <motion.div
+              className="w-full h-full"
+              whileHover={{
+                rotateY: 15,
+                rotateX: -10,
+                scale: 1.05,
+              }}
+              transition={{
+                duration: 0.4,
+                ease: 'easeOut',
+              }}
+            >
+              <Image
+                src={product.imageUrl}
+                alt={product.description}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                data-ai-hint={product.imageHint}
+              />
+            </motion.div>
+          </motion.div>
+          <CardContent className="p-4 text-center flex-1 flex flex-col justify-center bg-card/20">
+            <h3 className="font-headline text-lg font-semibold flex-1 leading-tight text-foreground">
+              {product.description}
+            </h3>
+            <div className="mt-4 flex justify-between items-center">
+              <p className="font-semibold text-lg text-primary">
+                ${product.price.toFixed(2)}
+              </p>
+              <Button
+                size="icon"
+                variant="ghost"
+                className="rounded-full bg-primary/10 text-primary hover:bg-primary/20 hover:text-primary"
+              >
+                <ShoppingCart className="h-4 w-4" />
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+      </motion.div>
+    </Link>
+  );
+};
+
+
 export default function Home() {
   const products = PlaceHolderImages.slice(0, 4);
 
@@ -36,33 +95,40 @@ export default function Home() {
         variants={staggerContainer}
         className="w-full h-[calc(100vh-80px)] flex flex-col justify-center items-center relative text-center px-4 overflow-hidden"
       >
-        <Image
-          src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Fashion editorial background"
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint="fashion editorial"
-        />
-        <div className="absolute inset-0 bg-white/30 z-5"></div>
+        <motion.div
+          className="absolute inset-0"
+          initial={{ scale: 1.1, opacity: 0.8 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 10, ease: 'easeOut', delay: 0.5 }}
+        >
+          <Image
+            src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Fashion editorial background"
+            fill
+            className="object-cover"
+            priority
+            data-ai-hint="fashion editorial"
+          />
+        </motion.div>
+        <div className="absolute inset-0 bg-black/40 z-5"></div>
 
         <motion.h1
           variants={fadeIn}
-          className="font-headline text-5xl md:text-8xl font-bold z-10 tracking-tight text-foreground"
+          className="font-headline text-5xl md:text-8xl font-bold z-10 tracking-tight text-white drop-shadow-lg"
         >
-          The Art of Style
+          Elegance in Motion
         </motion.h1>
         <motion.p
           variants={fadeIn}
-          className="mt-4 max-w-2xl text-lg md:text-xl text-foreground/80 z-10"
+          className="mt-4 max-w-2xl text-lg md:text-xl text-white/80 z-10"
         >
-          Discover curated collections where timeless design meets modern artistry.
+          An immersive fashion experience with AI-powered styling and 3D visualization.
         </motion.p>
         <motion.div
           variants={fadeIn}
           className="mt-8 z-10"
         >
-          <Button asChild size="lg" className="font-headline text-base tracking-wider transition-all hover:scale-105 bg-foreground text-background hover:bg-foreground/90">
+          <Button asChild size="lg" className="font-headline text-base tracking-wider transition-all hover:scale-105 bg-white/90 text-black hover:bg-white drop-shadow-glow-gold">
             <Link href="/products">Explore The Collection <ArrowRight className="ml-2" /></Link>
           </Button>
         </motion.div>
@@ -87,23 +153,7 @@ export default function Home() {
                 key={product.id}
                 variants={fadeIn}
               >
-                <Link href={`/products/${product.id}`} className="group block">
-                  <Card className="overflow-hidden group h-full flex flex-col shadow-none transition-shadow duration-300 border-none rounded-none bg-card">
-                      <div className="aspect-[3/4] relative overflow-hidden">
-                      <Image
-                        src={product.imageUrl}
-                        alt={product.description}
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        data-ai-hint={product.imageHint}
-                      />
-                    </div>
-                    <CardContent className="p-4 text-center flex-1 flex flex-col justify-center bg-background">
-                      <h3 className="font-headline text-lg font-semibold flex-1 leading-tight">{product.description}</h3>
-                      <p className="mt-2 font-semibold text-muted-foreground">${product.price.toFixed(2)}</p>
-                    </CardContent>
-                  </Card>
-                </Link>
+                <ProductCard product={product} />
               </motion.div>
             ))}
           </motion.div>
