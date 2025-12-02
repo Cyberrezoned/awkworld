@@ -4,10 +4,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, Bot, Video } from 'lucide-react';
+import { ArrowRight, Bot, Video, ShieldCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -78,7 +79,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <motion.h2 variants={fadeIn} className="text-center font-headline text-4xl md:text-5xl font-bold tracking-tight">Featured Pieces</motion.h2>
           <motion.p variants={fadeIn} className="text-center mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            A curated selection of our most distinctive and sought-after designs.
+            A curated selection of our most distinctive and sought-after designs, each paired with a unique digital twin.
           </motion.p>
           <motion.div variants={staggerContainer} className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {products.map((product) => (
@@ -98,7 +99,7 @@ export default function Home() {
                     transition={{ type: 'spring', stiffness: 200, damping: 20 }}
                   >
                     <Card className="overflow-hidden group h-full flex flex-col shadow-sm transition-shadow duration-300 border-border/50 bg-card">
-                      <div className="aspect-[3/4] relative overflow-hidden">
+                       <div className="aspect-[3/4] relative overflow-hidden">
                         <Image
                           src={product.imageUrl}
                           alt={product.description}
@@ -106,6 +107,10 @@ export default function Home() {
                           className="object-cover transition-transform duration-500 group-hover:scale-110"
                           data-ai-hint={product.imageHint}
                         />
+                        <Badge variant="secondary" className="absolute top-3 right-3 gap-1">
+                            <ShieldCheck className="h-3 w-3"/>
+                            NFT
+                        </Badge>
                       </div>
                       <CardContent className="p-4 flex-1 flex flex-col">
                         <h3 className="font-headline text-lg font-semibold flex-1 leading-tight">{product.description}</h3>

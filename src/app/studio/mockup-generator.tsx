@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -16,8 +17,8 @@ import { Textarea } from '@/components/ui/textarea';
 import { Progress } from '@/components/ui/progress';
 
 const formSchema = z.object({
-  productName: z.string().min(1, 'Product name is required.'),
-  productDescription: z.string().min(1, 'Product description is required.'),
+  productName: z.string().min(1, 'Garment name is required.'),
+  productDescription: z.string().min(1, 'A description is required.'),
   productFeatures: z.string().min(1, 'Please list at least one feature.'),
   style: z.string().min(1, 'Style is required.'),
 });
@@ -35,10 +36,10 @@ export default function MockupGenerator() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      productName: 'Kinetic Mesh Sneakers',
-      productDescription: 'Lightweight sneakers with a responsive sole and breathable mesh that adapts to your movement.',
-      productFeatures: 'Self-lacing system, energy-return foam, customizable LED patterns',
-      style: 'Futuristic, minimalist',
+      productName: 'Cyber-Noir Trench Coat',
+      productDescription: 'A sleek, water-resistant trench coat with an asymmetric cut, high collar, and subtle holographic accents. Made for the modern urban explorer.',
+      productFeatures: 'Graphene-infused fabric, magnetic closures, interior device pockets',
+      style: 'Futuristic, cyberpunk, elegant',
     },
   });
 
@@ -63,8 +64,8 @@ export default function MockupGenerator() {
   return (
     <Card className="bg-card/50 border-border/50">
       <CardHeader>
-        <CardTitle className="font-headline text-2xl">Describe Your Vision</CardTitle>
-        <CardDescription>Describe your product and let our AI create a video mockup.</CardDescription>
+        <CardTitle className="font-headline text-2xl">Describe Your Garment</CardTitle>
+        <CardDescription>Describe a fashion item and our AI will create a video mockup.</CardDescription>
       </CardHeader>
       <CardContent>
         <Form {...form}>
@@ -75,7 +76,7 @@ export default function MockupGenerator() {
                 name="productName"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Product Name</FormLabel>
+                    <FormLabel>Garment / Accessory Name</FormLabel>
                     <FormControl>
                       <Input placeholder="e.g., Chrono-Weave Jacket" {...field} />
                     </FormControl>
@@ -90,7 +91,7 @@ export default function MockupGenerator() {
                   <FormItem>
                     <FormLabel>Visual Style</FormLabel>
                     <FormControl>
-                      <Input placeholder="e.g., Minimalist, Elegant" {...field} />
+                      <Input placeholder="e.g., Minimalist, Haute Couture" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -102,9 +103,9 @@ export default function MockupGenerator() {
               name="productDescription"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Product Description</FormLabel>
+                  <FormLabel>Fashion Description</FormLabel>
                   <FormControl>
-                    <Textarea placeholder="A detailed description of the product." {...field} />
+                    <Textarea placeholder="A detailed description of the garment's look, feel, and material." {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -115,9 +116,9 @@ export default function MockupGenerator() {
               name="productFeatures"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Key Features (comma-separated)</FormLabel>
+                  <FormLabel>Key Features to Highlight (comma-separated)</FormLabel>
                   <FormControl>
-                    <Input placeholder="Feature 1, Feature 2, Feature 3" {...field} />
+                    <Input placeholder="e.g., Asymmetric cut, Silk lining, Custom hardware" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>

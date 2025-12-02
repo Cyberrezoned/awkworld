@@ -8,8 +8,9 @@ import { useSearchParams, useRouter, usePathname } from 'next/navigation';
 import { PlaceHolderImages, ImagePlaceholder } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ShieldCheck } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Badge } from '@/components/ui/badge';
 
 const ProductCard = ({ product }: { product: ImagePlaceholder }) => {
   return (
@@ -25,14 +26,18 @@ const ProductCard = ({ product }: { product: ImagePlaceholder }) => {
         <Link href={`/products/${product.id}`} className="group block">
         <Card className="overflow-hidden border-border/50 shadow-sm transition-shadow duration-300 rounded-lg bg-card h-full flex flex-col">
             <div className="aspect-[3/4] relative overflow-hidden">
-            <Image
-                src={product.imageUrl}
-                alt={product.description}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
-                data-ai-hint={product.imageHint}
-            />
+                <Image
+                    src={product.imageUrl}
+                    alt={product.description}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                    data-ai-hint={product.imageHint}
+                />
+                 <Badge variant="secondary" className="absolute top-3 right-3 gap-1">
+                    <ShieldCheck className="h-3 w-3"/>
+                    NFT
+                </Badge>
             </div>
             <CardContent className="p-6 text-center flex-1 flex flex-col justify-center">
                 <h3 className="font-headline text-xl font-medium text-foreground">{product.description}</h3>
@@ -49,14 +54,16 @@ export default function ProductsPage() {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const currentPage = Number(searchParams.get('page')) || 1;
-  const productsPerPage = 8;
   
+  const productsPerPage = 8;
+  const currentPage = Number(searchParams.get('page')) || 1;
+
   const totalProducts = PlaceHolderImages.length;
   const totalPages = Math.ceil(totalProducts / productsPerPage);
 
   const startIndex = (currentPage - 1) * productsPerPage;
-  const paginatedProducts = PlaceHolderImages.slice(startIndex, startIndex + productsPerPage);
+  const endIndex = startIndex + productsPerPage;
+  const paginatedProducts = PlaceHolderImages.slice(startIndex, endIndex);
   
   const createPageURL = (pageNumber: number) => {
     const params = new URLSearchParams(searchParams);

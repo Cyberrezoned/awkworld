@@ -5,11 +5,12 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { PlaceHolderImages, ImagePlaceholder } from '@/lib/placeholder-images';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { Minus, Plus, ShoppingCart, Check } from 'lucide-react';
+import { Minus, Plus, ShoppingCart, Check, ShieldCheck } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { Badge } from '@/components/ui/badge';
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
   const { toast } = useToast();
@@ -52,6 +53,10 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
             priority
             data-ai-hint={product.imageHint}
           />
+           <Badge variant="secondary" className="absolute top-4 right-4 gap-1 text-base py-2 px-3">
+                <ShieldCheck className="h-4 w-4"/>
+                NFT Edition
+            </Badge>
         </div>
 
         <div className="flex flex-col h-full pt-8">
@@ -61,8 +66,6 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
             <p className="text-3xl font-semibold mb-6">${product.price.toFixed(2)}</p>
           </div>
           
-          <Separator className="my-6" />
-
           <div className="space-y-4 text-muted-foreground">
             <h2 className="text-lg font-semibold text-foreground">Description</h2>
             <p>
@@ -70,6 +73,21 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
               Crafted with the finest materials and an eye for modern aesthetics, this piece is a testament to timeless style and exceptional quality. 
               Its versatile design allows it to be a staple in any wardrobe, transcending seasons and trends.
             </p>
+          </div>
+
+          <Separator className="my-6" />
+
+          <div className="rounded-lg border border-border bg-card/50 p-4 space-y-3">
+              <div className="flex items-center gap-2">
+                <ShieldCheck className="w-5 h-5 text-primary"/>
+                <h3 className="font-semibold text-foreground">Digital Twin Included</h3>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                  Each purchase includes a unique NFT, serving as a digital certificate of authenticity and ownership for your physical garment.
+              </p>
+               <Button variant="link" className="p-0 h-auto text-sm">
+                  Verify on Blockchain &rarr;
+              </Button>
           </div>
 
           <Separator className="my-8"/>

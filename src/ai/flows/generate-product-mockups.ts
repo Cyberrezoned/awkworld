@@ -12,10 +12,10 @@ import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
 const GenerateProductMockupInputSchema = z.object({
-  productName: z.string().describe('The name of the product.'),
-  productDescription: z.string().describe('A detailed description of the product.'),
-  productFeatures: z.array(z.string()).describe('A list of key features of the product.'),
-  style: z.string().describe('The desired style for the mockup (e.g., minimalist, futuristic, elegant).'),
+  productName: z.string().describe('The name of the fashion product.'),
+  productDescription: z.string().describe('A detailed description of the fashion product.'),
+  productFeatures: z.array(z.string()).describe('A list of key features to highlight in the video.'),
+  style: z.string().describe('The desired visual style for the mockup (e.g., minimalist, futuristic, haute couture).'),
 });
 export type GenerateProductMockupInput = z.infer<typeof GenerateProductMockupInputSchema>;
 
@@ -36,11 +36,12 @@ const generateProductMockupFlow = ai.defineFlow(
     outputSchema: GenerateProductMockupOutputSchema,
   },
   async input => {
-    const prompt = `A cinematic, professional product video of: ${input.productName}.
+    const prompt = `Create a cinematic, professional fashion product video.
+    Product Name: ${input.productName}.
     Description: ${input.productDescription}.
-    Key Features to highlight: ${input.productFeatures.join(', ')}.
+    Key Features to visually highlight: ${input.productFeatures.join(', ')}.
     The visual style should be: ${input.style}.
-    The product should be presented on a clean, neutral background.`;
+    The video should showcase the garment on a simple, elegant background, focusing on texture, cut, and movement. Emphasize luxury and craftsmanship.`;
 
     // Use Veo to generate the video.
     let { operation } = await ai.generate({
@@ -56,7 +57,7 @@ const generateProductMockupFlow = ai.defineFlow(
       throw new Error('Expected the model to return an operation');
     }
 
-    // Wait until the operation completes. Note that this may take some time, maybe even up to a minute. Design the UI accordingly.
+    // Wait until the operation completes.
     while (!operation.done) {
       operation = await ai.checkOperation(operation);
       // Sleep for 5 seconds before checking again.
