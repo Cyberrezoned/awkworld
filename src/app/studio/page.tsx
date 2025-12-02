@@ -1,3 +1,4 @@
+
 import { Video } from 'lucide-react';
 import MockupGenerator from './mockup-generator';
 

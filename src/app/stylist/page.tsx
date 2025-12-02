@@ -1,3 +1,4 @@
+
 import { Bot } from 'lucide-react';
 import StylistForm from './stylist-form';
 

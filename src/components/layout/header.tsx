@@ -5,13 +5,15 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import Logo from '@/components/icons/logo';
+import { Bot, Clapperboard } from 'lucide-react';
 
 const navItems = [
   { href: '/products', label: 'New Arrivals' },
   { href: '/products?category=women', label: "AWKWorld Women" },
   { href: '/products?category=men', label: "AWKWorld Men" },
   { href: '/products?category=streetwear', label: 'Streetwear' },
-  { href: '/products?category=collabs', label: 'Global Collabs' },
+  { href: '/stylist', label: 'AI Stylist', icon: Bot },
+  { href: '/studio', label: 'AI Studio', icon: Clapperboard },
   { href: '/delivery', label: 'Nationwide Delivery' },
 ];
 
@@ -27,16 +29,17 @@ export default function Header() {
             </Link>
         </div>
         
-        <nav className="hidden md:flex items-center gap-8 justify-center">
+        <nav className="hidden md:flex items-center gap-6 justify-center">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  'relative font-medium text-sm uppercase tracking-wider text-muted-foreground transition-colors hover:text-primary',
+                  'relative font-medium text-sm uppercase tracking-wider text-muted-foreground transition-colors hover:text-primary flex items-center gap-2',
                   pathname === item.href && 'text-foreground'
                 )}
               >
+                {item.icon && <item.icon className="h-4 w-4" />}
                 {item.label}
               </Link>
             ))}

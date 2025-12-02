@@ -1,3 +1,4 @@
+
 'use server';
 /**
  * @fileOverview Outfit suggestion flow using user body type, weather, and trend data.
@@ -11,7 +12,7 @@ import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
 const OutfitSuggestionInputSchema = z.object({
-  bodyType: z.string().describe('The user\u2019s body type (e.g., athletic, curvy, slim).'),
+  bodyType: z.string().describe('The user’s body type (e.g., athletic, curvy, slim).'),
   weather: z.string().describe('The current weather conditions (e.g., sunny, rainy, cold).'),
   trendData: z.string().describe('Current fashion trends (e.g., streetwear, minimalist, vintage).'),
 });

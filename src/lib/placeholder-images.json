@@ -2,74 +2,74 @@
   "placeholderImages": [
     {
       "id": "prod_001",
-      "description": "Geo-Print Silk Blouse",
+      "description": "Adire Silk Maxi Dress",
       "category": "AWKWorld Women",
       "price": 250000,
-      "imageUrl": "https://images.unsplash.com/photo-1552838686-23e2cffb044d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "african print blouse"
+      "imageUrl": "https://images.unsplash.com/photo-1617103987759-4f284244f776?q=80&w=2787&auto=format&fit=crop",
+      "imageHint": "nigerian woman fashion"
     },
     {
       "id": "prod_002",
-      "description": "Charcoal Linen Suit",
+      "description": "Luxe Agbada Suit",
       "category": "AWKWorld Men",
       "price": 950000,
-      "imageUrl": "https://images.unsplash.com/photo-1617137968423-31f3b7fa98c3?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "man linen suit"
+      "imageUrl": "https://images.unsplash.com/photo-1620012818283-3a956d79743a?q=80&w=2787&auto=format&fit=crop",
+      "imageHint": "nigerian man agbada"
     },
     {
       "id": "prod_003",
-      "description": "Kinetic Leather Crossbody",
+      "description": "Beaded Leather Handbag",
       "category": "Bags, Shoes & Luxury Accessories",
       "price": 550000,
-      "imageUrl": "https://images.unsplash.com/photo-1613482181206-a09cebb1e4c7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1613482181206-a09cebb1e4c7?q=80&w=2787&auto=format&fit=crop",
       "imageHint": "futuristic leather bag"
     },
     {
       "id": "prod_004",
-      "description": "Ivory Knit Sweater",
+      "description": "Asymmetric Knit Top",
       "category": "AWKWorld Women",
       "price": 320000,
-      "imageUrl": "https://images.unsplash.com/photo-1616238395568-2c9635003504?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "white sweater model"
+      "imageUrl": "https://images.unsplash.com/photo-1541366014023-c35091206a46?q=80&w=2787&auto=format&fit=crop",
+      "imageHint": "black woman fashion"
     },
     {
       "id": "prod_005",
-      "description": "Neo-Loafer in Black",
+      "description": "Hand-Woven Loafers",
       "category": "Bags, Shoes & Luxury Accessories",
       "price": 420000,
-      "imageUrl": "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?q=80&w=2835&auto=format&fit=crop",
       "imageHint": "black loafers"
     },
     {
       "id": "prod_006",
-      "description": "AWK-Chronograph Watch",
+      "description": "AWK-Chronograph Gold",
       "category": "Bags, Shoes & Luxury Accessories",
       "price": 1800000,
-      "imageUrl": "https://images.unsplash.com/photo-1620625515032-6ed2a143b83b?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1620625515032-6ed2a143b83b?q=80&w=2787&auto=format&fit=crop",
       "imageHint": "black gold watch"
     },
     {
       "id": "prod_007",
-      "description": "Tech-Trench Coat",
+      "description": "Futuristic Ankara Coat",
       "category": "AWKWorld Women",
       "price": 750000,
-      "imageUrl": "https://images.unsplash.com/photo-1574201635302-388dd78a4664?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "futuristic trench coat"
+      "imageUrl": "https://images.unsplash.com/photo-1609172152482-55d817c7a522?q=80&w=2787&auto=format&fit=crop",
+      "imageHint": "african print coat"
     },
     {
       "id": "prod_008",
-      "description": "Monochrome Utility Shirt",
+      "description": "Graphic Print Camp Collar Shirt",
       "category": "AWKWorld Men",
       "price": 180000,
-      "imageUrl": "https://images.unsplash.com/photo-1596489379201-d308a1a3a38a?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1596489379201-d308a1a3a38a?q=80&w=2787&auto=format&fit=crop",
       "imageHint": "man black shirt"
     },
     {
       "id": "prod_009",
-      "description": "Deconstructed Trousers",
+      "description": "Flowing Wide-Leg Trousers",
       "category": "AWKWorld Women",
       "price": 290000,
-      "imageUrl": "https://images.unsplash.com/photo-1594625842422-9a67fb797e5d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1594625842422-9a67fb797e5d?q=80&w=2787&auto=format&fit=crop",
       "imageHint": "white trousers"
     },
     {
@@ -77,15 +77,15 @@
       "description": "AWK-1 High-Top Sneakers",
       "category": "AWKWorld Streetwear",
       "price": 480000,
-      "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d244837524?q=80&w=2828&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d244837524?q=80&w=2828&auto=format&fit=crop",
       "imageHint": "futuristic sneakers"
     },
     {
       "id": "prod_011",
-      "description": "Kinetic Gold Hoops",
+      "description": "Statement Gold Earrings",
       "category": "Bags, Shoes & Luxury Accessories",
       "price": 195000,
-      "imageUrl": "https://images.unsplash.com/photo-1615655416383-2f883b271344?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1615655416383-2f883b271344?q=80&w=2787&auto=format&fit=crop",
       "imageHint": "gold earrings"
     },
     {
@@ -93,7 +93,7 @@
       "description": "Vector Leather Belt",
       "category": "Bags, Shoes & Luxury Accessories",
       "price": 240000,
-      "imageUrl": "https://images.unsplash.com/photo-1619894982144-8a7197b37492?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1619894982144-8a7197b37492?q=80&w=2940&auto=format&fit=crop",
       "imageHint": "black leather belt"
     },
     {
@@ -101,7 +101,7 @@
       "description": "Asymmetric Crepe Dress",
       "category": "AWKWorld Women",
       "price": 520000,
-      "imageUrl": "https://images.unsplash.com/photo-1620012818693-8a39c905b184?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1620012818693-8a39c905b184?q=80&w=2787&auto=format&fit=crop",
       "imageHint": "futuristic black dress"
     },
     {
@@ -109,55 +109,55 @@
       "description": "Graphite Utility Trousers",
       "category": "AWKWorld Men",
       "price": 220000,
-      "imageUrl": "https://images.unsplash.com/photo-1597851965903-2f2299d42512?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1597851965903-2f2299d42512?q=80&w=2787&auto=format&fit=crop",
       "imageHint": "man black pants"
     },
     {
       "id": "prod_015",
-      "description": "Shield Sunglasses",
+      "description": "Gele-Inspired Headwrap",
       "category": "Bags, Shoes & Luxury Accessories",
       "price": 310000,
-      "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "futuristic sunglasses"
+      "imageUrl": "https://images.unsplash.com/photo-1533562343259-c2865c71c4fc?q=80&w=2787&auto=format&fit=crop",
+      "imageHint": "gele headwrap"
     },
     {
       "id": "prod_016",
       "description": "Oversized Graphic Hoodie",
       "category": "AWKWorld Streetwear",
       "price": 150000,
-      "imageUrl": "https://images.unsplash.com/photo-1587293852885-b1e16caced03?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1587293852885-b1e16caced03?q=80&w=2835&auto=format&fit=crop",
       "imageHint": "streetwear hoodie"
     },
     {
       "id": "prod_017",
-      "description": "Sculptural High-Heels",
+      "description": "Ankara Print High-Heels",
       "category": "Bags, Shoes & Luxury Accessories",
       "price": 390000,
-      "imageUrl": "https://images.unsplash.com/photo-1590099033615-77725a2b13b7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1590099033615-77725a2b13b7?q=80&w=2787&auto=format&fit=crop",
       "imageHint": "gold heels"
     },
     {
       "id": "prod_018",
-      "description": "Carbon-Fibre Polo Shirt",
+      "description": "Lagos Streetstyle Tee",
       "category": "AWKWorld Men",
       "price": 210000,
-      "imageUrl": "https://images.unsplash.com/photo-1576995853123-5a1d3b4b53e3?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "man black polo"
+      "imageUrl": "https://images.unsplash.com/photo-1601160395914-70231d624b43?q=80&w=2787&auto=format&fit=crop",
+      "imageHint": "man street style"
     },
     {
       "id": "prod_019",
       "description": "AWK-Tote Bag",
       "category": "Bags, Shoes & Luxury Accessories",
       "price": 350000,
-      "imageUrl": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=2787&auto=format&fit=crop",
       "imageHint": "black tote bag"
     },
     {
       "id": "prod_020",
-      "description": "Moto-Synth Jacket",
+      "description": "Naija-Futurist Bomber",
       "category": "Global Designer Collabs",
       "price": 1250000,
-      "imageUrl": "https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?q=80&w=2798&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?q=80&w=2798&auto=format&fit=crop",
       "imageHint": "moto jacket"
     }
   ]
